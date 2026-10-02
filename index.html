@@ -1,0 +1,1718 @@
+<!doctype html><html><head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+
+<title>RubeTech Homepage V10</title>
+<meta name="description" content="RubeTech Partners, the Context CoLab, is an operator-led consultancy for $25M–$300M companies. We learn how your company runs across people, process and technology, then get the work done with your team as an embedded extension of it: RevOps, go-to-market, outbound, HubSpot and Salesforce, integrations, AI agents and the Context Engine.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --navy:#002D9C; --navy-deep:#001E6E; --royal:#0040A0; --green:#1FAA59; --green-ink:#04210F;
+  --ink:#1A1F36; --muted:#4E5672; --faint:#667090;
+  --paper:#FFFFFF; --wash:#F7F8FB; --line:#E5E9F2; --card:#FFFFFF;
+  --link:#0040A0; --pend:#8A5A00; --pend-bg:#FFF6E0; --vis:#6A4FD1; --vis-bg:#F4F1FF;
+  --f:"Inter","Helvetica Neue",Arial,sans-serif;
+  --wrap:1120px; --gutter:clamp(16px,5vw,56px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#E7EAF5; --muted:#A9B1CC; --faint:#8D96B4;
+    --paper:#0A1127; --wash:#0F1834; --line:#1F2B50; --card:#111B3A;
+    --link:#8FB0FF; --green:#3FD17D; --pend:#F2C66B; --pend-bg:#2B220C; --vis:#B7A2FF; --vis-bg:#1A1540;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E7EAF5; --muted:#A9B1CC; --faint:#8D96B4;
+  --paper:#0A1127; --wash:#0F1834; --line:#1F2B50; --card:#111B3A;
+  --link:#8FB0FF; --green:#3FD17D; --pend:#F2C66B; --pend-bg:#2B220C; --vis:#B7A2FF; --vis-bg:#1A1540;
+  color-scheme:dark;
+}
+html{scroll-padding-top:calc(76px + env(safe-area-inset-top,0px));-webkit-text-size-adjust:100%}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--link)}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,label:focus-within{outline:2px solid var(--green);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--gutter)}
+section{padding-block:clamp(56px,8vw,96px)}
+h1,h2,h3{margin:0 0 16px;line-height:1.12;letter-spacing:-.025em;text-wrap:balance}
+h2{font-size:clamp(27px,3.6vw,40px);font-weight:800;max-width:22ch}
+h3{font-size:19px;font-weight:700;letter-spacing:-.01em}
+p{margin:0 0 16px;max-width:64ch}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--royal);margin:0 0 14px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .eyebrow{color:#8FB0FF}}
+:root[data-theme="dark"] .eyebrow{color:#8FB0FF}
+.lede{font-size:clamp(18px,1.9vw,20px);color:var(--muted);max-width:60ch}
+.small{font-size:14px;color:var(--muted)}
+.wash{background:var(--wash)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;font:600 16px/1 var(--f);text-decoration:none;border-radius:9px;padding:14px 22px;border:1.5px solid transparent;cursor:pointer}
+.btn-go{background:var(--green);color:var(--green-ink)}
+.btn-go:hover{filter:brightness(1.06)}
+.btn-line{background:transparent;color:inherit;border-color:currentColor}
+.btns{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px}
+
+/* status chips */
+.pending{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.04em;color:var(--pend);background:var(--pend-bg);border:1px solid color-mix(in srgb,var(--pend) 40%,transparent);border-radius:999px;padding:2px 9px;vertical-align:2px;white-space:nowrap}
+.vis{display:block;border:1.5px dashed color-mix(in srgb,var(--vis) 60%,transparent);background:var(--vis-bg);color:var(--ink);border-radius:12px;padding:14px 18px;margin-top:32px;font-size:14px;line-height:1.5;max-width:none}
+.vis b{color:var(--vis);font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-right:8px}
+.on-navy .vis{background:rgba(255,255,255,.06);color:#DCE4FA;border-color:rgba(183,162,255,.55)}
+.on-navy .vis b{color:#CDBEFF}
+
+/* header */
+.site-head{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.head-in{display:flex;align-items:center;gap:22px;min-height:68px}
+.brand{text-decoration:none;color:var(--ink);line-height:1.1}
+.brand strong{display:block;font-size:18px;font-weight:800;letter-spacing:-.02em}
+.brand span{display:block;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-top:2px}
+.site-nav{display:flex;align-items:center;gap:24px;margin-left:auto}
+.site-nav a{font-size:15px;font-weight:500;color:var(--ink);text-decoration:none}
+.site-nav a:hover{color:var(--link)}
+.site-nav .btn{min-height:42px;padding:11px 16px;font-size:15px;color:var(--green-ink)}
+.menu-btn{display:none;margin-left:auto;font:600 15px var(--f);color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:8px;padding:10px 14px;min-height:44px;cursor:pointer}
+@media(max-width:820px){
+  .head-in{position:relative;min-height:60px}
+  .menu-btn{display:inline-block}
+  .site-nav{display:none;position:absolute;top:100%;left:calc(-1 * var(--gutter));right:calc(-1 * var(--gutter));flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px var(--gutter) 18px}
+  .site-nav.open{display:flex}
+  .site-nav a{padding:13px 0;border-bottom:1px solid var(--line);font-size:16px}
+  .site-nav .btn{margin-top:14px;border-bottom:0}
+}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;padding-block:clamp(64px,10vw,120px)}
+.hero .for{display:inline-block;font-size:13px;font-weight:600;color:#9FE7BE;border:1px solid rgba(159,231,190,.45);border-radius:999px;padding:6px 13px;margin-bottom:26px}
+.hero h1{font-size:clamp(38px,6.6vw,76px);font-weight:800;letter-spacing:-.035em;line-height:1.02;max-width:14ch;color:#fff;margin-bottom:26px}
+.hero .sub{font-size:clamp(18px,2vw,21px);line-height:1.55;color:#C9D4F2;max-width:56ch;margin-bottom:0}
+.hero .btn-line{color:#fff;border-color:rgba(255,255,255,.55)}
+.hero .reassure{margin:16px 0 0;font-size:14.5px;color:#A9B8E6}
+
+/* recognition */
+.story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(28px,6vw,80px);align-items:start}
+@media(max-width:860px){.story{grid-template-columns:1fr}}
+.story .body p{font-size:18px}
+.purchases{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.purchases li{position:relative;padding:0 0 20px 24px}
+.purchases li::before{content:"";position:absolute;left:-7px;top:.45em;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--navy)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .purchases li::before{border-color:#8FB0FF}}
+:root[data-theme="dark"] .purchases li::before{border-color:#8FB0FF}
+.purchases b{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);font-weight:600}
+.purchases span{font-size:16.5px}
+.purchases li.now span{font-weight:700}
+
+/* alternatives */
+.alts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:36px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
+@media(max-width:900px){.alts{grid-template-columns:1fr}}
+.alt{padding:26px;border-right:1px solid var(--line)}
+.alt:last-child{border-right:0}
+@media(max-width:900px){.alt{border-right:0;border-bottom:1px solid var(--line)}.alt:last-child{border-bottom:0}}
+.alt .who{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin:0 0 10px}
+.alt p{font-size:16px;color:var(--muted);margin-bottom:12px}
+.alt p:last-child{margin-bottom:0}
+.alt.us{background:var(--navy);color:#fff}
+.alt.us .who{color:#9FE7BE}
+.alt.us h3{color:#fff}
+.alt.us p{color:#C9D4F2}
+.fact{font-size:13px;color:var(--faint);margin-top:14px}
+.fact a{color:inherit}
+
+/* colab */
+.colab-intro{max-width:64ch}
+.pillars{display:grid;gap:0;margin-top:40px;border-top:1px solid var(--line)}
+.pillar{display:grid;grid-template-columns:240px minmax(0,1fr);gap:clamp(18px,4vw,56px);padding:30px 0;border-bottom:1px solid var(--line)}
+@media(max-width:800px){.pillar{grid-template-columns:1fr;gap:8px}}
+.pillar .name{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--green);margin:4px 0 8px}
+.pillar h3{font-size:22px;letter-spacing:-.02em;margin:0}
+.pillar .text p{font-size:17px;margin-bottom:12px}
+.pillar .text p:last-child{margin-bottom:0}
+.belief{font-weight:700;color:var(--ink)}
+.inline-cta{margin-top:30px;font-size:16px}
+.inline-cta a{font-weight:600}
+
+/* field notes */
+.notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:36px}
+@media(max-width:820px){.notes{grid-template-columns:1fr}}
+.note{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.note .where{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+.note .where b{font-size:13px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--faint)}
+.note .found{font-size:17px;font-weight:600;line-height:1.45;margin:0}
+.note .did{font-size:16px;color:var(--muted);margin:0}
+.quote{margin:44px 0 0;padding:34px 0 0;border-top:1px solid var(--line)}
+.quote blockquote{margin:0;font-size:clamp(21px,2.6vw,28px);line-height:1.4;font-weight:600;letter-spacing:-.015em;max-width:38ch}
+.quote figcaption{margin-top:14px;font-size:15px;color:var(--muted)}
+
+/* team */
+.team{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(28px,6vw,72px);align-items:start}
+@media(max-width:860px){.team{grid-template-columns:1fr}}
+.roles{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.roles li{padding:16px 0;border-bottom:1px solid var(--line)}
+.roles strong{display:block;font-size:17px}
+.roles span{font-size:15.5px;color:var(--muted)}
+
+/* engine */
+.engine{background:var(--navy-deep);color:#fff}
+.engine h2{color:#fff}
+.engine .eyebrow{color:#9FE7BE}
+.engine p{color:#C9D4F2}
+.asks{display:grid;gap:12px;margin:30px 0 8px;max-width:720px}
+.ask{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:11px;padding:16px 18px;font-size:17.5px;color:#fff}
+.ask::before{content:"Ask  ";font-size:11.5px;font-weight:700;letter-spacing:.1em;color:#9FE7BE;text-transform:uppercase}
+.engine .facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:22px;padding:0;list-style:none;font-size:15px;color:#C9D4F2}
+.engine .facts li::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#3FD17D;margin-right:9px;vertical-align:2px}
+
+/* self-check */
+.check{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,64px);align-items:start}
+@media(max-width:900px){.check{grid-template-columns:1fr}}
+.check-intro{position:sticky;top:96px}
+@media(max-width:900px){.check-intro{position:static}}
+.qs{display:grid;gap:12px;margin:0;padding:0}
+.q{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:16px 18px;margin:0}
+.q legend{float:left;width:100%;padding:0;margin-bottom:12px;font-size:16.5px;font-weight:600;line-height:1.45}
+.q legend span{color:var(--faint);font-weight:600;margin-right:8px;font-variant-numeric:tabular-nums}
+.opts{clear:both;display:flex;flex-wrap:wrap;gap:8px}
+.opts label{display:inline-flex;align-items:center;gap:8px;font-size:15px;border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer;min-height:40px;user-select:none}
+.opts input{accent-color:var(--navy);width:16px;height:16px;margin:0}
+.opts label:has(input:checked){border-color:var(--navy);background:color-mix(in srgb,var(--navy) 9%,transparent);font-weight:600}
+.progress{font-size:14px;color:var(--muted);margin:14px 0 0}
+.result{margin-top:22px;border:2px solid var(--navy);border-radius:14px;padding:24px;background:var(--card)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .result{border-color:#8FB0FF}}
+:root[data-theme="dark"] .result{border-color:#8FB0FF}
+.result .score{font-size:clamp(34px,5vw,48px);font-weight:800;letter-spacing:-.03em;line-height:1;margin:0 0 6px;font-variant-numeric:tabular-nums}
+.result .score small{font-size:16px;font-weight:600;color:var(--muted);letter-spacing:0}
+.result h3{font-size:21px;margin-top:10px}
+.result ul{margin:14px 0 0;padding-left:20px}
+.result li{margin-bottom:8px;font-size:15.5px}
+.capture{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);display:grid;gap:12px}
+.capture .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.capture .row{grid-template-columns:1fr}}
+.capture label{display:grid;gap:6px;font-size:14px;font-weight:600}
+.capture input,.capture select{font:16px var(--f);color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:11px 12px;min-height:46px;width:100%}
+.sent{font-size:15px;color:var(--green);font-weight:600;margin:4px 0 0}
+
+/* faq */
+.faq{border-top:1px solid var(--line);margin-top:32px;max-width:860px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;padding:20px 0;font-size:17.5px;font-weight:600}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-weight:400;font-size:24px;line-height:1;color:var(--faint)}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 0 22px}
+.faq .a p{color:var(--muted);font-size:16.5px}
+
+/* book */
+.book{background:var(--navy);color:#fff}
+.book h2{color:#fff;max-width:18ch}
+.book .lede{color:#C9D4F2}
+.book-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:start}
+@media(max-width:900px){.book-grid{grid-template-columns:1fr}}
+.expect{list-style:none;margin:26px 0 0;padding:0;counter-reset:e}
+.expect li{counter-increment:e;display:grid;grid-template-columns:30px 1fr;gap:8px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.14);color:#DCE4FA;font-size:16px}
+.expect li::before{content:counter(e);font-weight:700;color:#9FE7BE;font-variant-numeric:tabular-nums}
+.cal{border:1.5px dashed rgba(255,255,255,.4);border-radius:14px;padding:26px;min-height:320px;display:flex;flex-direction:column;justify-content:center;gap:10px;background:rgba(255,255,255,.05);color:#DCE4FA;font-size:15px}
+.cal strong{color:#fff;font-size:17px}
+.book .alt-path{margin-top:20px;font-size:15.5px;color:#C9D4F2}
+.book .alt-path a{color:#fff;font-weight:600}
+
+/* footer */
+.site-foot{border-top:1px solid var(--line);padding-block:44px;font-size:14.5px;color:var(--muted)}
+.foot-grid{display:grid;grid-template-columns:1.5fr repeat(2,1fr);gap:28px}
+@media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr}}
+.foot-grid h3{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin-bottom:10px}
+.foot-grid ul{list-style:none;margin:0;padding:0}
+.foot-grid li{margin-bottom:7px}
+.foot-grid a{color:var(--muted);text-decoration:none}
+.foot-grid a:hover{color:var(--link)}
+.foot-bottom{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;font-size:13px}
+
+/* team notes */
+.teamnotes{background:var(--wash);border-top:1px solid var(--line)}
+.teamnotes h2{font-size:clamp(22px,2.6vw,28px)}
+.tn-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:26px}
+@media(max-width:860px){.tn-grid{grid-template-columns:1fr}}
+.tn{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.tn h3{font-size:16px;margin-bottom:10px}
+.tn ul,.tn ol{margin:0;padding-left:20px;font-size:14.5px;color:var(--muted)}
+.tn li{margin-bottom:7px}
+.tn li b{color:var(--ink)}
+.tn code{font-size:13px;background:var(--wash);border:1px solid var(--line);border-radius:5px;padding:1px 5px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:var(--gutter);top:8px;z-index:60;background:var(--paper);padding:10px 14px;border-radius:8px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* ---- V6 additions ---- */
+:root{--conf:#0B6770;--conf-bg:#E2F3F4}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--conf:#86D9DE;--conf-bg:#0C2A2D}}
+:root[data-theme="dark"]{--conf:#86D9DE;--conf-bg:#0C2A2D}
+.confirm{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.04em;color:var(--conf);background:var(--conf-bg);border:1px solid color-mix(in srgb,var(--conf) 40%,transparent);border-radius:999px;padding:2px 9px;vertical-align:2px;white-space:nowrap}
+.on-navy .confirm{color:#A8ECEF;background:rgba(134,217,222,.12);border-color:rgba(134,217,222,.45)}
+.on-navy .pending{color:#F6D38A;background:rgba(242,198,107,.12);border-color:rgba(242,198,107,.45)}
+
+/* hero proof strip */
+.proofstrip{margin-top:44px;padding-top:24px;border-top:1px solid rgba(255,255,255,.18);display:grid;gap:16px}
+.proofstrip .lbl{font-size:12px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#9FE7BE;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.proofstrip ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media(max-width:820px){.proofstrip ul{grid-template-columns:1fr}}
+.proofstrip li{display:grid;gap:4px}
+.proofstrip li strong{font-size:17px;font-weight:700;color:#fff;line-height:1.35}
+.proofstrip li span{font-size:13.5px;color:#A9B8E6}
+
+/* where the work goes */
+.routes{margin-top:36px;border-top:1px solid var(--line);max-width:960px}
+.route{display:grid;grid-template-columns:240px minmax(0,1fr);gap:clamp(16px,4vw,48px);padding:24px 0;border-bottom:1px solid var(--line)}
+@media(max-width:800px){.route{grid-template-columns:1fr;gap:6px}}
+.route h3{margin:0;font-size:18px}
+.route p{margin:0 0 8px;font-size:16.5px;color:var(--muted)}
+.route p:last-child{margin-bottom:0}
+.route .fact{margin-top:6px}
+.colab-box{margin-top:32px;max-width:960px;background:var(--navy);color:#fff;border-radius:14px;padding:clamp(22px,4vw,34px)}
+.colab-box .who{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#9FE7BE;margin:0 0 10px}
+.colab-box h3{color:#fff;font-size:22px}
+.colab-box p{color:#C9D4F2;font-size:17px}
+.colab-box p:last-child{margin-bottom:0}
+
+/* journey */
+.journey{list-style:none;margin:36px 0 0;padding:0;counter-reset:j;display:grid;gap:0;border-top:1px solid var(--line)}
+.journey > li{counter-increment:j;display:grid;grid-template-columns:56px minmax(0,1fr) minmax(0,.9fr);gap:clamp(14px,3vw,36px);padding:26px 0;border-bottom:1px solid var(--line)}
+@media(max-width:900px){.journey > li{grid-template-columns:44px minmax(0,1fr)}.journey .meta{grid-column:2}}
+.journey > li::before{content:counter(j);font-size:28px;font-weight:800;color:var(--navy);line-height:1;font-variant-numeric:tabular-nums}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .journey > li::before{color:#8FB0FF}}
+:root[data-theme="dark"] .journey > li::before{color:#8FB0FF}
+.journey h3{margin:0 0 8px}
+.journey p{margin:0;font-size:16.5px;color:var(--muted)}
+.journey .meta{display:grid;gap:8px;font-size:14.5px;color:var(--muted);align-content:start}
+.journey .meta div{display:grid;gap:2px}
+.journey .meta b{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint)}
+.journey ul.deliv{margin:10px 0 0;padding-left:18px;font-size:15.5px;color:var(--muted)}
+.journey ul.deliv li{margin-bottom:4px}
+
+/* field note result row */
+.note .result-row{margin:0;padding-top:10px;border-top:1px solid var(--line);font-size:15px;color:var(--ink);display:flex;gap:8px;flex-wrap:wrap;align-items:baseline}
+.note .result-row b{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint)}
+
+/* host card */
+.host{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;align-items:center;margin-top:26px;padding:16px;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:rgba(255,255,255,.05)}
+.host .ph{width:64px;height:64px;border-radius:50%;border:1.5px dashed rgba(255,255,255,.45);display:grid;place-items:center;font-size:11px;color:#A9B8E6;text-align:center}
+.host strong{display:block;color:#fff;font-size:16.5px}
+.host span{font-size:14.5px;color:#C9D4F2}
+.topic{margin-top:18px;padding:12px 14px;border-radius:10px;background:rgba(159,231,190,.1);border:1px solid rgba(159,231,190,.4);color:#DCF7E7;font-size:15px}
+.result .book-topic{margin-top:14px;font-size:15.5px}
+.result .book-topic a{font-weight:600}
+.capture .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+@media(max-width:700px){.capture .row3{grid-template-columns:1fr}}
+.tn table{width:100%;border-collapse:collapse;font-size:14px;color:var(--muted)}
+.tn td{padding:6px 8px 6px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.tn td:first-child{color:var(--ink);font-weight:600;white-space:nowrap}
+.tn-wide{grid-column:1/-1}
+.legend{display:flex;gap:12px;flex-wrap:wrap;align-items:center;font-size:13.5px;color:var(--muted);margin-top:14px}
+
+/* ---- V7 additions ---- */
+.problems{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+@media(max-width:700px){.problems{grid-template-columns:1fr}}
+.problems li{padding:18px 18px 18px 0;border-bottom:1px solid var(--line);display:grid;gap:4px}
+.problems li b{font-size:16.5px;color:var(--ink)}
+.problems li span{font-size:15.5px;color:var(--muted)}
+
+.colab-key{display:flex;flex-wrap:wrap;gap:10px 22px;margin:18px 0 0;padding:0;list-style:none;font-size:15px;color:var(--muted)}
+.colab-key b{color:var(--ink)}
+.svc-groups{display:grid;gap:0;margin-top:34px;border-top:1px solid var(--line)}
+.svc-group{display:grid;grid-template-columns:260px minmax(0,1fr);gap:clamp(18px,4vw,56px);padding:30px 0;border-bottom:1px solid var(--line)}
+@media(max-width:860px){.svc-group{grid-template-columns:1fr;gap:12px}}
+.svc-group .name{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--green);margin:4px 0 8px}
+.svc-group h3{font-size:21px;margin:0 0 8px}
+.svc-group .gl{font-size:15.5px;color:var(--muted);margin:0}
+.svcs{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.svcs li{display:grid;gap:3px}
+.svcs li strong{font-size:17px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.svcs li span{font-size:15.5px;color:var(--muted)}
+.start{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--green-ink);background:var(--green);border-radius:999px;padding:2px 9px}
+
+.diff{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,6vw,72px);align-items:start}
+@media(max-width:860px){.diff{grid-template-columns:1fr}}
+.capab{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media(max-width:520px){.capab{grid-template-columns:1fr}}
+.capab li{border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--card);font-size:15px;color:var(--muted)}
+.capab li b{display:block;color:var(--ink);font-size:15.5px}
+
+.prices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:32px}
+@media(max-width:980px){.prices{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.prices{grid-template-columns:1fr}}
+.price{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.price.first{border:2px solid var(--navy)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .price.first{border-color:#8FB0FF}}
+:root[data-theme="dark"] .price.first{border-color:#8FB0FF}
+.price h3{margin:0;font-size:18px;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.price .amt{font-size:24px;font-weight:800;letter-spacing:-.02em;color:var(--ink);margin:0;font-variant-numeric:tabular-nums}
+.price .term{font-size:14px;color:var(--faint);margin:0}
+.price p{font-size:15.5px;color:var(--muted);margin:0}
+.qualifiers{margin-top:26px;max-width:820px;font-size:16px;color:var(--muted)}
+
+.results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:36px}
+@media(max-width:820px){.results{grid-template-columns:1fr}}
+.results .note .metric{font-size:22px;font-weight:800;letter-spacing:-.02em;color:var(--ink);margin:0;line-height:1.25}
+
+.revq{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:16px 18px;display:grid;gap:8px}
+.revq label{font-size:16.5px;font-weight:600}
+.revq select{font:16px var(--f);color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:11px 12px;min-height:46px;max-width:320px}
+.q .dim{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin-left:8px}
+.sizeline{margin:10px 0 0;font-size:15.5px;color:var(--muted)}
+.result li .size{display:block;font-size:14.5px;color:var(--faint);margin-top:2px}
+.offer{margin-top:20px;padding:18px;border-radius:12px;background:var(--navy);color:#fff;display:grid;gap:10px}
+.offer p{margin:0;color:#C9D4F2}
+.offer strong{color:#fff;font-size:17px}
+.offer .btn{justify-self:start}
+
+/* ---- V7.2 additions ---- */
+.proofstrip li{gap:6px}
+.proofstrip .ind{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#9FE7BE;padding-top:12px;border-top:2px solid #1FAA59}
+.proof-more{justify-self:start;color:#fff;font-weight:600;font-size:15px}
+.pyr{margin-top:40px}
+.pyr-name{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin:0 0 14px}
+.pyramid{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.tier{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:clamp(16px,4vw,48px);align-items:center}
+.shape{height:112px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:18px;color:#fff;font-weight:800;font-size:18px;letter-spacing:-.01em}
+.t1 .shape{background:var(--navy);clip-path:polygon(0 100%,100% 100%,83.4% 0,16.6% 0)}
+.t2 .shape{background:#0040A0;clip-path:polygon(16.6% 100%,83.4% 100%,66.7% 0,33.3% 0)}
+.t3 .shape{background:var(--green);color:var(--green-ink);clip-path:polygon(33.3% 100%,66.7% 100%,50% 0)}
+.t3 .shape span{font-size:16px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .t1 .shape{background:#1D4FC4}:root:not([data-theme="light"]) .t2 .shape{background:#3A6FE0}}
+:root[data-theme="dark"] .t1 .shape{background:#1D4FC4}
+:root[data-theme="dark"] .t2 .shape{background:#3A6FE0}
+.desc .pname{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--green);margin:0 0 4px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .desc .pname{color:#3FD17D}}
+.desc h3{margin:0 0 6px;font-size:20px}
+.desc p{margin:0;font-size:16.5px;color:var(--muted)}
+.desc .pname{color:var(--green)}
+@media(max-width:760px){
+  .pyramid{gap:0}
+  .tier{display:contents}
+  .shape{order:0;width:100%;max-width:320px;justify-self:center;height:78px;font-size:15px;padding-bottom:12px;margin-bottom:5px}
+  .t3 .shape span{font-size:13px}
+  .desc{order:1;padding-top:18px}
+  .t3 .desc{margin-top:14px}
+}
+.svc-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:32px}
+@media(max-width:980px){.svc-cols{grid-template-columns:1fr}}
+.svc-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+.svc-col h3{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--royal);margin:0 0 18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .svc-col h3{color:#8FB0FF}}
+:root[data-theme="dark"] .svc-col h3{color:#8FB0FF}
+.svcs{gap:18px}
+.start-btn{justify-self:start;display:inline-flex;align-items:center;gap:8px;margin-top:8px;min-height:44px;padding:10px 18px;border-radius:9px;background:var(--green);color:var(--green-ink);font:700 15px/1 var(--f);text-decoration:none}
+.start-btn::after{content:"\2192"}
+.start-btn:hover{filter:brightness(1.06)}
+.start{font-size:12.5px;padding:4px 11px}
+.engine-panel{margin-top:22px;background:var(--navy-deep);color:#fff;border-radius:16px;padding:clamp(24px,4vw,40px)}
+.engine-panel .eyebrow{color:#9FE7BE}
+.engine-panel h3{color:#fff;font-size:clamp(22px,2.6vw,28px);letter-spacing:-.02em;line-height:1.2;max-width:26ch}
+.engine-panel p{color:#C9D4F2;font-size:16.5px}
+.engine-panel .ep-it{font-size:15px;color:#A9B8E6}
+.engine-panel .asks{margin:0}
+.engine-panel .inline-cta{margin:12px 0 0;color:#C9D4F2}
+.engine-panel .inline-cta a{color:#fff}
+.ep-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,48px);align-items:start}
+@media(max-width:860px){.ep-grid{grid-template-columns:1fr}}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.filters button{font:600 15px var(--f);color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:9px 16px;min-height:42px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.results .note[hidden]{display:none}
+
+/* ---- V8 additions ---- */
+.ep-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px);align-items:start}
+@media(max-width:900px){.ep-top{grid-template-columns:1fr}}
+.engine-panel .ep-tag{color:#fff;font-weight:600}
+.layers{display:grid;gap:8px;margin-top:18px}
+.layers div{display:grid;grid-template-columns:150px 1fr;gap:12px;align-items:baseline;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04)}
+@media(max-width:520px){.layers div{grid-template-columns:1fr;gap:2px}}
+.layers b{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:#A9B8E6}
+.layers span{font-size:15px;color:#C9D4F2}
+.layers .l3{border-color:#3FD17D;background:rgba(63,209,125,.1)}
+.layers .l3 b{color:#9FE7BE}
+.layers .l3 span{color:#fff}
+.demo-lbl{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#9FE7BE;margin:0 0 10px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.demo-lbl span{color:#A9B8E6;font-weight:600;letter-spacing:.04em;text-transform:none}
+.demo-qs{display:grid;gap:8px}
+.demo-qs button{font:500 15.5px var(--f);text-align:left;color:#fff;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:11px 14px;cursor:pointer;min-height:44px}
+.demo-qs button[aria-pressed="true"]{border-color:#3FD17D;background:rgba(63,209,125,.14)}
+.screen{margin-top:12px;background:#fff;color:#1A1F36;border-radius:12px;padding:6px 16px;box-shadow:0 12px 30px -12px rgba(0,0,0,.5)}
+.s-row{margin:0;padding:11px 0;border-bottom:1px solid #E5E9F2;display:grid;grid-template-columns:120px 1fr;gap:12px;font-size:15px;color:#1A1F36}
+.s-row:last-child{border-bottom:0}
+.engine-panel .screen .s-row,.engine-panel .screen .s-row span{color:#1A1F36;font-size:15px}
+.engine-panel .screen .s-row b{color:#667090}
+@media(max-width:520px){.s-row{grid-template-columns:1fr;gap:3px}}
+.s-row b{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:#667090;padding-top:3px}
+.s-ask span{font-weight:600}
+.s-act{align-items:start}
+.s-btns{grid-column:2;display:flex;gap:8px;margin-top:8px}
+@media(max-width:520px){.s-btns{grid-column:1}}
+.s-btn{font-size:13.5px;font-weight:600;padding:6px 12px;border-radius:7px;border:1px solid #CBD2E3;color:#1A1F36}
+.s-btn.go{background:#1FAA59;border-color:#1FAA59;color:#04210F}
+.ce-steps{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;counter-reset:c}
+@media(max-width:900px){.ce-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.ce-steps{grid-template-columns:1fr}}
+.ce-steps li{counter-increment:c;position:relative;padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);display:grid;gap:6px}
+.ce-steps li::before{content:counter(c);font-size:13px;font-weight:800;color:#04210F;background:#3FD17D;width:24px;height:24px;border-radius:50%;display:grid;place-items:center}
+.ce-steps b{color:#fff;font-size:16.5px}
+.ce-steps span{color:#C9D4F2;font-size:14.5px;line-height:1.5}
+@media(min-width:901px){.ce-steps li:not(:last-child)::after{content:"\2192";position:absolute;right:-12px;top:18px;color:#3FD17D;font-weight:700}}
+.ep-foot{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,4vw,48px);margin-top:28px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14)}
+@media(max-width:900px){.ep-foot{grid-template-columns:1fr}}
+.uses{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.uses li{font-size:14px;color:#DCE4FA;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 12px}
+.engine-panel .ep-it b{display:block;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#9FE7BE;margin-bottom:6px}
+.price .addon{margin-top:4px;padding-top:12px;border-top:1px solid var(--line);font-size:15px}
+.price .addon b{display:block;color:var(--ink);font-size:14.5px;margin-bottom:2px}
+.funnel .shape{align-items:flex-start;padding-bottom:0;padding-top:20px}
+.funnel .t1 .shape{clip-path:polygon(0 0,100% 0,83.4% 100%,16.6% 100%)}
+.funnel .t2 .shape{clip-path:polygon(16.6% 0,83.4% 0,66.7% 100%,33.3% 100%)}
+.funnel .t3 .shape{clip-path:polygon(33.3% 0,66.7% 0,50% 100%)}
+@media(max-width:760px){.funnel .shape{padding-top:14px;padding-bottom:0}}
+:root{--prob:#B3261E;--sol:#137A3F}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--prob:#FF8A7A;--sol:#3FD17D}}
+:root[data-theme="dark"]{--prob:#FF8A7A;--sol:#3FD17D}
+.svcs .ps:first-of-type b{color:var(--prob)}
+.svcs .ps + .ps b{color:var(--sol)}
+.site-nav{gap:22px;flex-wrap:nowrap}
+.site-nav a{white-space:nowrap;font-size:14.5px}
+.brand{flex-shrink:0;white-space:nowrap}
+@media(max-width:1120px){
+  .head-in{position:relative;min-height:60px}
+  .menu-btn{display:inline-block}
+  .site-nav{display:none;position:absolute;top:100%;left:calc(-1 * var(--gutter));right:calc(-1 * var(--gutter));flex-direction:column;align-items:center;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px var(--gutter) 18px}
+  .site-nav.open{display:flex}
+  .site-nav a{width:100%;max-width:420px;text-align:center;padding:13px 0;border-bottom:1px solid var(--line);font-size:16px}
+  .site-nav .btn{width:auto;margin-top:14px;border-bottom:0;padding:11px 22px}
+}
+.svcs .ps{margin:0;font-size:15.5px;color:var(--muted)}
+.svcs .ps b{display:block;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin-bottom:1px}
+.svcs .ps + .ps{margin-top:6px}
+.rule-top{border-top:1px solid var(--line)}
+.pyr-foot{margin:26px 0 0;font-size:17px;font-weight:600;color:var(--ink);max-width:60ch}
+.svcs .more{justify-self:start;font-size:14.5px;font-weight:600;margin-top:2px}
+.svcs .more::after{content:" \2192"}
+.price .start-btn{margin-top:auto;align-self:flex-start;line-height:1.2}
+.price .pending{font-size:13px;vertical-align:4px}
+.dims{display:grid;gap:10px;margin:16px 0 4px}
+.dim-row{display:grid;grid-template-columns:100px minmax(0,1fr) auto;gap:12px;align-items:center;font-size:15px}
+@media(max-width:520px){.dim-row{grid-template-columns:90px minmax(0,1fr)}.dim-row .band{grid-column:1/-1}}
+.dim-row .bar{height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.dim-row .bar i{display:block;height:100%;background:var(--navy);border-radius:99px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dim-row .bar i{background:#8FB0FF}}
+:root[data-theme="dark"] .dim-row .bar i{background:#8FB0FF}
+.dim-row .band{color:var(--muted);font-size:14px}
+
+/* ---- nav: always horizontal ---- */
+.menu-btn{display:none!important}
+.head-in{flex-wrap:wrap;gap:0 28px}
+.site-nav{display:flex!important;position:static!important;flex-direction:row!important;flex:1 1 auto;justify-content:space-evenly;align-items:center;gap:8px!important;padding:0!important;border:0!important;background:none!important;margin-left:0!important}
+.site-nav a{white-space:nowrap;padding:8px 4px!important;border:0!important;font-size:15px!important;width:auto!important;text-align:center}
+.head-cta{min-height:42px;padding:11px 18px;font-size:15px;white-space:nowrap;flex-shrink:0}
+@media(max-width:1100px){.site-nav a{font-size:14px!important}.head-in{gap:0 18px}}
+@media(max-width:980px){
+  .head-in{padding-block:8px}
+  .head-cta{margin-left:auto}
+  .site-nav{order:3;flex-basis:100%;justify-content:space-between;overflow-x:auto;scrollbar-width:none;border-top:1px solid var(--line)!important;margin-top:8px!important;padding-top:4px!important}
+  .site-nav::-webkit-scrollbar{display:none}
+  .site-nav a{font-size:13.5px!important;padding:8px 2px!important}
+}
+@media(max-width:560px){.site-nav{justify-content:flex-start;gap:18px!important}}
+
+/* ---- V9 additions ---- */
+.svc-col .gl{font-size:15.5px;color:var(--muted);margin:-8px 0 18px}
+.paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:32px}
+@media(max-width:860px){.paths{grid-template-columns:1fr}}
+.path{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;display:grid;gap:10px;align-content:start}
+.path .who{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--green);margin:0}
+.path h3{margin:0;font-size:21px}
+.path p{margin:0;font-size:16px;color:var(--muted)}
+.path ul{margin:4px 0 0;padding-left:18px;font-size:15.5px;color:var(--muted)}
+.path ul li{margin-bottom:4px}
+.path a.more{font-weight:600;font-size:15px;justify-self:start}
+.path a.more::after{content:" \2192"}
+.path.ce{background:var(--navy);border-color:var(--navy);color:#fff}
+.path.ce .who{color:#9FE7BE}
+.path.ce h3{color:#fff}
+.path.ce p,.path.ce ul{color:#C9D4F2}
+.path.ce a.more{color:#fff}
+.agents-h{margin:40px 0 6px;font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
+.agents{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media(max-width:980px){.agents{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.agents{grid-template-columns:1fr}}
+.agents li{border:1px solid var(--line);border-radius:11px;padding:14px 16px;background:var(--card);display:grid;gap:4px;align-content:start}
+.agents li b{font-size:15.5px;color:var(--ink)}
+.agents li span{font-size:14.5px;color:var(--muted);line-height:1.5}
+.ce-why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:30px}
+@media(max-width:900px){.ce-why{grid-template-columns:1fr}}
+.ce-why div{padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);display:grid;gap:6px;align-content:start}
+.ce-why b{color:#fff;font-size:16.5px;line-height:1.35}
+.ce-why span{color:#C9D4F2;font-size:15px;line-height:1.55}
+.ce-pillars{margin:30px 0 0;font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#9FE7BE}
+.ce-pillars + .ce-steps{margin-top:12px}
+.cmp-wrap{margin-top:28px;overflow-x:auto}
+.cmp{width:100%;min-width:560px;border-collapse:collapse;font-size:15px}
+.cmp caption{text-align:left;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#9FE7BE;padding-bottom:10px}
+.cmp th,.cmp td{text-align:left;vertical-align:top;padding:11px 14px;border-bottom:1px solid rgba(255,255,255,.14)}
+.cmp thead th{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:#A9B8E6;font-weight:700}
+.cmp thead th.us{color:#9FE7BE}
+.cmp tbody th{color:#fff;font-weight:600;width:22%}
+.cmp td.them{color:#8D96B4}
+.cmp td.us{color:#fff}
+.v-agents{margin-top:10px}
+.v-agents .uses li{border-style:dashed}
+.principles{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.principles li{padding:16px 0;border-bottom:1px solid var(--line);display:grid;gap:4px}
+.principles b{font-size:17px}
+.principles span{font-size:15.5px;color:var(--muted)}
+.roles strong small{font-weight:500;color:var(--faint);font-size:14.5px;margin-left:6px}
+.inds{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:32px}
+@media(max-width:1000px){.inds{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.inds{grid-template-columns:1fr}}
+.ind-card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:20px;display:grid;gap:8px;align-content:start}
+.ind-card h3{margin:0;font-size:17px}
+.ind-card ul{margin:0;padding-left:18px;font-size:15px;color:var(--muted)}
+.ind-card li{margin-bottom:6px}
+.price.ce-card{border:2px solid var(--green)}
+.price .roi{font-size:15px;font-weight:600;color:var(--ink)}
+
+/* ---- V10.4 additions: before/after visual ---- */
+.ba{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,3vw,32px);margin-top:36px}
+@media(max-width:900px){.ba{grid-template-columns:1fr}}
+.ba-card{border-radius:16px;padding:clamp(22px,3vw,32px);display:flex;flex-direction:column;gap:16px;min-width:0}
+.ba-today{background:#F7F8FB;color:#1A1F36}
+.ba-ce{background:rgba(255,255,255,.05);border:1px solid #1FAA59;color:#fff}
+.ba-lbl{margin:0;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#5A6380}
+.ba-ce .ba-lbl{color:#3FD17D}
+.ba-card h3{margin:0;font-size:clamp(20px,2.2vw,24px);line-height:1.3;letter-spacing:-.015em;color:#1A1F36;max-width:none}
+.ba-ce h3{color:#fff}
+.ba-sys{list-style:none;margin:4px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.ba-sys li{background:#fff;border:1px dashed #9AA3B8;border-radius:10px;padding:13px 16px;font-size:15.5px;color:#1A1F36}
+.ba-flow{display:flex;justify-content:space-around;height:40px}
+.ba-arrow{width:12px;height:100%;fill:none;stroke:#7A8399;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
+.ba-arrow.up{stroke:#3FD17D;stroke-dasharray:none}
+.ba-out{margin:0;background:#fff;border:1px solid #D5DAE6;border-radius:12px;padding:18px 22px;font-size:15.5px;line-height:1.5;color:#3D4560}
+.ba-out b{display:block;font-size:17.5px;color:#1A1F36;margin-bottom:4px}
+.ba-outs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:4px}
+@media(max-width:520px){.ba-outs{grid-template-columns:1fr}}
+.ba-outs p{margin:0;background:#fff;border-radius:12px;padding:16px 18px;font-size:14.5px;line-height:1.5;color:#3D4560}
+.ba-outs b{display:block;font-size:16.5px;color:#002D9C;margin-bottom:4px}
+.ba-engine{margin:0;background:#002D9C;border:2px solid #1FAA59;border-radius:12px;padding:16px 22px;text-align:center;font-size:15px;line-height:1.5;color:#D6DEF5}
+.ba-engine b{display:block;font-size:19px;color:#fff;margin-bottom:2px}
+.ba-chips{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.ba-chips li{background:#0A2A80;border:1px solid #3552A8;border-radius:8px;padding:9px 6px;text-align:center;font-size:14px;color:#fff}
+.ce-demo-wrap{margin-top:40px}
+.ba-grow{flex:1 1 auto;min-height:44px;justify-content:center}
+.ba-line{position:relative;width:0;border-left:2px dashed #7A8399;margin-bottom:6px}
+.ba-line::after{content:"";position:absolute;left:-7px;bottom:-4px;width:8px;height:8px;border-right:2px solid #7A8399;border-bottom:2px solid #7A8399;transform:rotate(45deg)}
+
+/* ---- V10.5: tighter before/after ---- */
+.ba{margin-top:28px;gap:clamp(14px,2vw,22px)}
+.ba-card{padding:clamp(18px,2.2vw,24px);gap:12px}
+.ba-card h3{font-size:clamp(17px,1.7vw,19px);line-height:1.3}
+.ba-sys{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:0}
+.ba-sys li{padding:9px 12px;font-size:14.5px;line-height:1.35}
+@media(max-width:520px){.ba-sys{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ba-flow{height:26px}
+.ba-grow{min-height:28px}
+.ba-out{padding:13px 16px;font-size:14.5px}
+.ba-out b{font-size:16px;margin-bottom:2px}
+.ba-outs{gap:10px;margin-top:0}
+.ba-outs p{padding:12px 14px;font-size:14px;line-height:1.45}
+.ba-outs b{font-size:15.5px;margin-bottom:2px}
+.ba-engine{padding:11px 18px;font-size:14px}
+.ba-engine b{font-size:17px}
+.ba-chips{gap:6px}
+.ba-chips li{padding:6px 4px;font-size:13.5px}
+.ce-demo-wrap{margin-top:32px}
+
+/* ---- V10.2 additions ---- */
+.hero{padding-bottom:clamp(40px,6vw,64px)}
+.hero + section{padding-top:clamp(40px,6vw,64px)}
+.ce-intro{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,4vw,48px);margin-top:6px}
+@media(max-width:820px){.ce-intro{grid-template-columns:1fr;gap:12px}}
+.ce-intro p{margin:0;max-width:none;color:#C9D4F2;font-size:clamp(16.5px,1.6vw,18px);line-height:1.6;min-width:0}
+.ce-intro p:last-child{color:#fff}
+a.s-btn{text-decoration:none;cursor:pointer}
+a.s-btn:hover{filter:brightness(1.05)}
+
+/* ---- V10.1 additions ---- */
+.problems .tags{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:6px}
+.problems a.tag{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--sol);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--sol) 45%,transparent);text-underline-offset:4px;line-height:1.5}
+.problems a.tag::after{content:" \2192"}
+.problems a.tag:hover{text-decoration-color:currentColor}
+.pillar-bands{display:grid;gap:22px;margin-top:34px}
+.pillar-band{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+@media(max-width:900px){.pillar-band{grid-template-columns:1fr}}
+.pb-head{padding:clamp(22px,3vw,32px);background:var(--navy);color:#fff;display:grid;gap:8px;align-content:start}
+.p-revenue .pb-head{background:var(--royal)}
+.p-systems .pb-head{background:var(--navy-deep)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pb-head{background:#1D4FC4}:root:not([data-theme="light"]) .p-revenue .pb-head{background:#2A5BD0}:root:not([data-theme="light"]) .p-systems .pb-head{background:#16307A}}
+:root[data-theme="dark"] .pb-head{background:#1D4FC4}
+:root[data-theme="dark"] .p-revenue .pb-head{background:#2A5BD0}
+:root[data-theme="dark"] .p-systems .pb-head{background:#16307A}
+.pb-num{margin:0;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#9FE7BE}
+.pb-head h3{margin:0;color:#fff;font-size:clamp(22px,2.4vw,26px);line-height:1.15;letter-spacing:-.02em}
+.pb-head p{margin:0;color:#DCE4FA;font-size:16px}
+.tiles{list-style:none;margin:0;padding:clamp(16px,2.4vw,24px);display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;align-content:start}
+.tile{border:1px solid var(--line);border-radius:12px;padding:18px;display:grid;gap:8px;align-content:start;background:var(--paper);scroll-margin-top:96px;transition:box-shadow .3s,border-color .3s}
+.tile:target{border-color:var(--green);box-shadow:0 0 0 3px color-mix(in srgb,var(--green) 30%,transparent)}
+.tile h4{margin:0;font-size:17px;line-height:1.3}
+.tile p{margin:0;font-size:15px;color:var(--muted);line-height:1.5}
+.tile p b{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1px}
+.tile .t-prob b{color:var(--prob)}
+.tile .t-sol b{color:var(--sol)}
+.tile .more,.tile .start-btn{justify-self:start;margin-top:4px}
+.tile .more{font-size:14.5px;font-weight:600}
+.tile .more::after{content:" \2192"}
+.funnel .t1 .desc .pname{color:var(--navy)}
+.funnel .t2 .desc .pname{color:var(--royal)}
+.funnel .t3 .desc .pname{color:var(--sol)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .funnel .t1 .desc .pname{color:#8FB0FF}:root:not([data-theme="light"]) .funnel .t2 .desc .pname{color:#A9C2FF}}
+:root[data-theme="dark"] .funnel .t1 .desc .pname{color:#8FB0FF}
+:root[data-theme="dark"] .funnel .t2 .desc .pname{color:#A9C2FF}
+
+/* ---- V10 additions ---- */
+.hero-cols{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,3vw,36px);max-width:980px}
+@media(max-width:820px){.hero-cols{grid-template-columns:1fr;gap:16px}}
+.hero-cols li{display:grid;gap:6px;align-content:start;padding-top:14px;border-top:2px solid rgba(159,231,190,.55);min-width:0}
+.hero-cols b{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#9FE7BE}
+.hero-cols span{font-size:clamp(16.5px,1.6vw,18px);line-height:1.5;color:#DCE4FA}
+.cred-line{list-style:none;margin:30px 0 0;padding:18px 0 0;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15px;color:#C9D4F2}
+.cred-line li::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#3FD17D;margin-right:9px;vertical-align:2px}
+.cred-line a{color:#fff;font-weight:600}
+.problems li .tag{font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--green);margin-top:4px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .problems li .tag{color:#3FD17D}}
+.engine-sec{background:var(--navy-deep);color:#fff}
+.engine-sec h2{color:#fff;max-width:24ch}
+.engine-sec .eyebrow{color:#9FE7BE}
+.engine-sec .lede{color:#C9D4F2}
+.pillars3{list-style:none;margin:34px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;counter-reset:p}
+@media(max-width:900px){.pillars3{grid-template-columns:1fr}}
+.pillars3 > li{counter-increment:p;padding:22px;border-radius:14px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);display:grid;gap:10px;align-content:start;min-width:0}
+.pillars3 > li::before{content:counter(p);font-size:13px;font-weight:800;color:#04210F;background:#3FD17D;width:26px;height:26px;border-radius:50%;display:grid;place-items:center}
+.pillars3 h3{margin:0;color:#fff;font-size:20px}
+.pillars3 p{margin:0;color:#C9D4F2;font-size:16px}
+.pillars3 .ex{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.pillars3 .ex li{font-size:13.5px;color:#DCE4FA;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:4px 10px}
+.pillars3 .dev{font-size:13.5px;color:#A9B8E6}
+.ce-demo-wrap{margin-top:30px;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(20px,4vw,44px);align-items:start}
+@media(max-width:900px){.ce-demo-wrap{grid-template-columns:1fr}}
+.ce-demo-wrap .demo-lbl{font-size:12px}
+.ce-demo-wrap h3{color:#fff;font-size:20px;margin:0 0 8px}
+.ce-demo-wrap > div > p{color:#C9D4F2;font-size:16px}
+.s-row b small{display:block;font-size:10.5px;letter-spacing:.08em;color:#137A3F;margin-top:2px}
+.ce-bottom{margin-top:32px;padding-top:26px;border-top:1px solid rgba(255,255,255,.16);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,36px)}
+@media(max-width:900px){.ce-bottom{grid-template-columns:1fr}}
+.ce-bottom > div{display:grid;gap:8px;align-content:start;min-width:0}
+.ce-bottom h3{margin:0;color:#fff;font-size:17px}
+.ce-bottom p,.ce-bottom li{color:#C9D4F2;font-size:15px;margin:0}
+.ce-bottom ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.ce-bottom .big{font-size:26px;font-weight:800;letter-spacing:-.02em;color:#fff;line-height:1.1}
+.ce-bottom .roi{color:#9FE7BE;font-weight:600}
+.engine-sec .inline-cta{color:#C9D4F2}
+.engine-sec .inline-cta a{color:#fff}
+.hs-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,5vw,56px);align-items:start;margin-top:8px}
+@media(max-width:900px){.hs-grid{grid-template-columns:1fr}}
+.hs-do{list-style:none;margin:22px 0 0;padding:0;border-top:1px solid var(--line)}
+.hs-do li{padding:13px 0;border-bottom:1px solid var(--line);font-size:16px}
+.hs-grid .agents{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:0}
+@media(max-width:520px){.hs-grid .agents{grid-template-columns:1fr}}
+.hs-grid .agents-h{margin-top:0}
+.why-lede{max-width:60ch}
+.results .note .rows{display:grid;gap:8px;margin:0}
+.results .note .rows div{display:grid;grid-template-columns:118px minmax(0,1fr);gap:10px;font-size:15.5px;color:var(--muted)}
+@media(max-width:520px){.results .note .rows div{grid-template-columns:1fr;gap:2px}}
+.results .note .rows b{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);padding-top:3px}
+.results .note.hear{background:var(--navy);border-color:var(--navy);color:#fff}
+.results .note.hear .where b{color:#9FE7BE}
+.results .note.hear ul{margin:0;padding-left:18px;color:#DCE4FA;font-size:16px;display:grid;gap:6px}
+.results .note.hear .small{color:#A9B8E6;margin:0}
+.results .note.hear .confirm{color:#A8ECEF;background:rgba(134,217,222,.12);border-color:rgba(134,217,222,.45)}
+.filters{overflow-x:auto;flex-wrap:wrap}
+
+/* ---- V10.7: nav dropdowns ---- */
+.head-in{position:relative}
+.nav-item{position:relative;display:inline-flex;align-items:center}
+.nav-item .nav-top{padding-right:0!important}
+.dd-btn{display:inline-grid;place-items:center;width:20px;height:32px;margin-left:0;padding:0;border:0;background:none;color:var(--faint);cursor:pointer;border-radius:6px}
+.dd-btn svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:transform .15s}
+.dd-btn:hover{color:var(--ink)}
+.nav-item.open .dd-btn svg{transform:rotate(180deg)}
+.dd{display:none;position:absolute;top:calc(100% + 6px);left:-8px;z-index:60;min-width:270px;padding:8px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 40px -16px rgba(10,17,39,.35);text-align:left}
+.dd::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px}
+.nav-item.open .dd{display:block}
+@media (hover:hover) and (min-width:981px){.nav-item:hover .dd,.nav-item:focus-within .dd{display:block}.nav-item:hover .dd-btn svg{transform:rotate(180deg)}}
+.dd-wide{min-width:0;width:min(720px,calc(100vw - 2 * var(--gutter)))}
+.dd-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 8px}
+.dd-h{margin:6px 12px 4px;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+.site-nav .dd a{display:block!important;width:auto!important;padding:9px 12px!important;border-radius:8px;white-space:normal!important;text-align:left!important;font-size:15px!important;line-height:1.35;color:var(--ink);text-decoration:none}
+.site-nav .dd a:hover,.site-nav .dd a:focus-visible{background:var(--wash);color:var(--link)}
+.site-nav .dd a b{display:block;font-weight:600}
+.site-nav .dd a span{display:block;font-size:13.5px;color:var(--muted);font-weight:400;margin-top:1px}
+@media(min-width:981px){.head-in{flex-wrap:nowrap;gap:0 20px}.site-nav{gap:2px!important;justify-content:space-evenly;min-width:0}}
+@media(min-width:981px) and (max-width:1180px){.site-nav a.nav-top{font-size:14px!important;padding:8px 2px!important}.brand strong{font-size:16.5px}.head-cta{padding:10px 14px;font-size:14.5px}}
+@media(max-width:980px){
+  html{scroll-padding-top:calc(118px + env(safe-area-inset-top,0px))}
+  .nav-item{position:static;flex-shrink:0}
+  .dd{left:0;right:0;top:100%;min-width:0;width:auto;border-radius:0 0 12px 12px;max-height:70vh;overflow-y:auto}
+  .dd::before{display:none}
+  .dd-cols{grid-template-columns:1fr}
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": [
+    "Organization",
+    "ProfessionalService"
+   ],
+   "@id": "https://www.rubetechpartners.com/#org",
+   "name": "RubeTech Partners",
+   "alternateName": "The Context CoLab",
+   "url": "https://www.rubetechpartners.com/",
+   "description": "RubeTech Partners, the Context CoLab, is an operator-led consultancy for larger SMB and mid-market companies with $25M–$300M in revenue. It learns how a business runs across people, process and technology, then works alongside the client's team as an embedded extension of it on revenue operations, go-to-market, outbound, HubSpot and Salesforce, integrations and automation, AI agents and the Context Engine.",
+   "areaServed": "United States",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Westport",
+    "addressRegion": "CT",
+    "addressCountry": "US"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/company/rubetech-partners"
+   ],
+   "knowsAbout": [
+    "Business process consulting",
+    "Discovery assessment",
+    "Revenue operations",
+    "Go-to-market strategy",
+    "Outbound as a service",
+    "HubSpot implementation",
+    "HubSpot AI agents",
+    "Salesforce",
+    "CRM implementation",
+    "Systems integration",
+    "Process automation",
+    "Application development",
+    "User experience design",
+    "Enterprise AI deployment",
+    "AI agents",
+    "Fractional technology leadership"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://www.rubetechpartners.com/#website",
+   "url": "https://www.rubetechpartners.com/",
+   "name": "RubeTech Partners",
+   "publisher": {
+    "@id": "https://www.rubetechpartners.com/#org"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What does RubeTech cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Most work starts with a Discovery Assessment, from $25,000 over about six weeks. It's priced on its own, and any engagement after it is scoped and priced separately. The pricing section shows starting points for the 100-Day Plan, CRM Rescue, the Revenue Engine Build and the Context Engine, which starts at $30,000 a month. Final pricing moves with company size, the number of locations and systems, and scope."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do we use AI to make our people more efficient without cutting jobs?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Start with the manual work that fills their week: re-keying, reporting and chasing follow-ups. We automate it and put agents on it, so your sales, marketing and operations teams spend their time on higher-value work. Most clients use the gain to grow without adding headcount."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens on the first call?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Forty-five minutes with a senior operator. You bring the problem or decision in front of you, and we ask how your company runs around it. You leave with our view. If working together makes sense, we'll outline a Discovery Assessment, including its length, its cost and who on your team it involves. If it doesn't, we'll say so."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is the Context Engine different from giving our team ChatGPT or Claude?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A chat assistant knows what one person pastes into it. The Context Engine is connected to all of your systems, uses your own definitions and KPIs, keeps what your people know after they leave, and stages the next step in your own tools. It runs on about 15 models, so it isn't tied to any one of them."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "We already have an IT lead. Where do you fit?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Next to them. Your IT lead keeps your systems running and stays in charge of them. We add the capacity they rarely have time for: mapping how work moves between systems, planning what to connect or retire, and engineering the builds."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "I'm the COO. How do I bring this to my CEO?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Send them this page, or book the conversation together so you both hear the same answers. Most of the questions we start with are ones the CEO will ask anyway: what the problem costs the business today, what changes first, and how much of the team's time it takes."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does the Discovery Assessment take, and how much of our team's time?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Usually about six weeks. Most people spend about 45 minutes with us once, and the people closest to the problem spend more. We schedule around your busy periods."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do we have to replace our systems?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Most of our work starts with what you already run. When something does need to go, you'll know why before anything changes."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What size company do you work with?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Larger SMB and mid-market companies, owner-led or PE-backed, with roughly $25M to $300M in revenue and often several locations. Below that range the economics rarely work for either of us, and we'll tell you."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you work with private equity–backed companies?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. We work with PE-backed operating companies, and with sponsors who want the same approach across several portfolio companies running on different systems."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do we own what you build, and where does our data live?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Your data stays yours, and custom builds are yours. The Context Engine is licensed. It runs in your cloud, on your own servers or fully in a closed loop, and where data does leave your environment, sensitive fields are hashed first."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are you a HubSpot agency?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. We're a consultancy with a revenue operations practice and a certified HubSpot Partner. For a revenue operation, we implement HubSpot or Salesforce and deploy HubSpot's AI agents. For intelligence and agents across every department, that's the Context Engine. We'll tell you when the problem is bigger than the CRM."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="#top" id="top"><strong>RubeTech Partners</strong><span>The Context CoLab</span></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    <nav class="site-nav" id="siteNav" aria-label="Primary">
+      <div class="nav-item">
+        <a class="nav-top" href="#services">Services</a><button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-services" aria-label="Services menu"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 L6 8 L9.5 4.5"/></svg></button>
+        <div class="dd dd-wide" id="dd-services">
+          <div class="dd-cols">
+            <div><p class="dd-h">Diagnose and plan</p>
+          <a href="#svc-discovery" data-track="nav_dd_click"><b>Discovery Assessment</b><span>Where most clients start</span></a>
+            </div>
+            <div><p class="dd-h">Revenue and go-to-market</p>
+          <a href="#svc-revops" data-track="nav_dd_click"><b>Revenue engine and RevOps</b></a>
+          <a href="#svc-gtm" data-track="nav_dd_click"><b>Go-to-market development</b></a>
+          <a href="#svc-outbound" data-track="nav_dd_click"><b>Outbound as a service</b></a>
+          <a href="#svc-crm" data-track="nav_dd_click"><b>HubSpot and CRM</b></a>
+            </div>
+            <div><p class="dd-h">Systems engineering and AI agents</p>
+          <a href="#svc-integrations" data-track="nav_dd_click"><b>Integrations, automation and applications</b></a>
+          <a href="#svc-ux" data-track="nav_dd_click"><b>User experience and front-end design</b></a>
+          <a href="#svc-ce" data-track="nav_dd_click"><b>The Context Engine</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-top" href="#how-we-work">How we work</a><button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-how" aria-label="How we work menu"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 L6 8 L9.5 4.5"/></svg></button>
+        <div class="dd" id="dd-how">
+          <a href="#how-we-work" data-track="nav_dd_click"><b>The Context CoLab</b><span>Contextualization, collaboration, build</span></a>
+          <a href="#how-it-starts" data-track="nav_dd_click"><b>How it starts</b><span>What happens after the first call</span></a>
+          <a href="#self-check" data-track="nav_dd_click"><b>3-minute self-check</b></a>
+          <a href="#faq" data-track="nav_dd_click"><b>FAQ</b></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-top" href="#context-engine">Context Engine</a><button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-ce" aria-label="Context Engine menu"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 L6 8 L9.5 4.5"/></svg></button>
+        <div class="dd" id="dd-ce">
+          <a href="#ce-pillars" data-track="nav_dd_click"><b>The three pillars</b><span>Data, inference and agents</span></a>
+          <a href="#ce-before-after" data-track="nav_dd_click"><b>Before and after</b></a>
+          <a href="#ce-demo" data-track="nav_dd_click"><b>Illustrative example</b></a>
+          <a href="#ce-facts" data-track="nav_dd_click"><b>Security, IT and cost</b></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-top" href="#hubspot" data-track="hubspot_nav">HubSpot &amp; CRM</a><button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-hs" aria-label="HubSpot &amp; CRM menu"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 L6 8 L9.5 4.5"/></svg></button>
+        <div class="dd" id="dd-hs">
+          <a href="#hubspot" data-track="nav_dd_click"><b>What we do</b><span>HubSpot and Salesforce</span></a>
+          <a href="#hs-agents" data-track="nav_dd_click"><b>HubSpot AI agents we deploy</b></a>
+          <a href="#pricing" data-track="nav_dd_click"><b>CRM Rescue and Revenue Engine pricing</b></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-top" href="#why">Why RubeTech</a><button class="dd-btn" type="button" aria-expanded="false" aria-controls="dd-why" aria-label="Why RubeTech menu"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 L6 8 L9.5 4.5"/></svg></button>
+        <div class="dd" id="dd-why">
+          <a href="#why" data-track="nav_dd_click"><b>How we work with clients</b></a>
+          <a href="#team" data-track="nav_dd_click"><b>Who you'd work with</b></a>
+          <a href="#results" data-track="nav_dd_click"><b>Results by industry</b></a>
+        </div>
+      </div>
+      <a class="nav-top" href="#pricing">Pricing</a>
+    </nav>
+    <a class="btn btn-go head-cta" href="#book" data-track="cta_book_click" data-loc="nav">Book a call</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 1 · HERO -->
+<section class="hero on-navy">
+  <div class="wrap">
+    <p class="for">For CEOs, COOs and senior leaders of $25M–$300M companies</p>
+    <h1>We learn how your company runs, then get the work done with your team.</h1>
+    <ul class="hero-cols" aria-label="Who we are and how we work">
+      <li><b>Who we are</b><span>An operator-led consultancy for large SMB and mid-market companies, with more than nine decades of combined founder and C-suite experience.</span></li>
+      <li><b>Where we start</b><span>A deep discovery into your people, processes and technology.</span></li>
+      <li><b>How we deliver</b><span>We choose the best-fit solution with you, then do the work as an embedded extension of your team.</span></li>
+    </ul>
+    <div class="btns">
+      <a class="btn btn-go" href="#book" data-track="cta_book_click" data-loc="hero">Book a 45-minute conversation</a>
+      <a class="btn btn-line" href="#self-check" data-track="selfcheck_click" data-loc="hero">Take the 3-minute business self-check</a>
+    </div>
+    <p class="reassure">You'll talk with a senior operator who works day to day on our clients' businesses. Bring your COO or IT lead if you'd like them in the room.</p>
+  </div>
+</section>
+
+<!-- 2 · PROBLEMS -->
+<section>
+  <div class="wrap story">
+    <div>
+      <p class="eyebrow">What we hear from leadership teams</p>
+      <h2>Every system you own was the right call at the time it was made.</h2>
+      <p class="lede">Each one does its job. But they don't share a centralized operating platform, and your team loses hours every week with manual management, slowing your growth.</p>
+    </div>
+    <div class="body">
+      <ul class="problems" aria-label="Common problems">
+        <li><b>Go-to-market that isn&#x27;t performing</b><span>Pipeline depends on referrals and a few people's networks, and growth is behind plan.</span><span class="tags"><a class="tag" href="#svc-gtm" data-track="problem_service_click">Go-to-market development</a></span></li>
+        <li><b>Tech that doesn&#x27;t talk to each other</b><span>The accounting package, the CRM and the field app each hold part of the picture, and nobody sees all of it.</span><span class="tags"><a class="tag" href="#svc-integrations" data-track="problem_service_click">Integrations, automation and applications</a></span></li>
+        <li><b>Too much manual work; skilled employees stuck on low-value tasks</b><span>Your best people re-key data and chase follow-ups instead of doing the work you hired them for.</span><span class="tags"><a class="tag" href="#svc-integrations" data-track="problem_service_click">Integrations, automation and applications</a><a class="tag" href="#svc-ce" data-track="problem_service_click">The Context Engine</a></span></li>
+        <li><b>AI everywhere, deployed nowhere</b><span>Everyone has been told to use AI, and each person uses it differently, so none of it reaches the rest of the company.</span><span class="tags"><a class="tag" href="#svc-ce" data-track="problem_service_click">The Context Engine</a></span></li>
+        <li><b>Knowledge that leaves with people</b><span>When someone moves on, what they knew about your customers, jobs and processes goes with them.</span><span class="tags"><a class="tag" href="#svc-ce" data-track="problem_service_click">The Context Engine</a></span></li>
+        <li><b>No clear view of where money leaks</b><span>"Which jobs made money last quarter" gets four different answers.</span><span class="tags"><a class="tag" href="#svc-discovery" data-track="problem_service_click">Discovery Assessment</a></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · SERVICES -->
+<section class="wash" id="services">
+  <div class="wrap">
+    <p class="eyebrow">Services</p>
+    <h2>What you can hire us for</h2>
+    <p class="lede">Three pillars. Most clients start with the first and add the others as the work shows what's needed.</p>
+    <div class="pillar-bands">
+      <article class="pillar-band p-diagnose">
+        <header class="pb-head">
+          <p class="pb-num">Pillar 1</p>
+          <h3>Diagnose and plan</h3>
+          <p>Know how your business runs before you spend on anything.</p>
+        </header>
+        <ul class="tiles">
+          <li class="tile" id="svc-discovery"><h4>Discovery Assessment</h4><p class="t-prob"><b>Problem</b>Big decisions about systems, AI and process land on leadership without a full picture.</p><p class="t-sol"><b>Solution</b>We map how your business runs across people, process and technology, then hand you ranked options, including what to turn off.</p><a class="start-btn" href="#discovery-assessment" data-track="start_here_click">Start here</a></li>
+        </ul>
+      </article>
+      <article class="pillar-band p-revenue">
+        <header class="pb-head">
+          <p class="pb-num">Pillar 2</p>
+          <h3>Revenue and go-to-market</h3>
+          <p>A pipeline that doesn't depend on a few people, run in HubSpot or Salesforce.</p>
+        </header>
+        <ul class="tiles">
+          <li class="tile" id="svc-revops"><h4>Revenue engine and RevOps</h4><p class="t-prob"><b>Problem</b>Pipeline, bookings and handoffs live in different places.</p><p class="t-sol"><b>Solution</b>We connect them into one revenue process your leadership reads every week.</p><a class="more" href="#book" data-track="cta_book_click" data-loc="service">Talk to us about it</a></li>
+          <li class="tile" id="svc-gtm"><h4>Go-to-market development</h4><p class="t-prob"><b>Problem</b>Growth depends on referrals and a few people's networks.</p><p class="t-sol"><b>Solution</b>We define the market, message and motion, and build the system behind them.</p><a class="more" href="#book" data-track="cta_book_click" data-loc="service">Talk to us about it</a></li>
+          <li class="tile" id="svc-outbound"><h4>Outbound as a service</h4><p class="t-prob"><b>Problem</b>Your team doesn't have the headcount for consistent outbound.</p><p class="t-sol"><b>Solution</b>We run it for you, from lists and sending to sequences and reporting, feeding your CRM.</p><a class="more" href="#book" data-track="cta_book_click" data-loc="service">Talk to us about it</a></li>
+          <li class="tile" id="svc-crm"><h4>HubSpot and CRM</h4><p class="t-prob"><b>Problem</b>Your team works around the CRM instead of in it.</p><p class="t-sol"><b>Solution</b>We audit, fix or implement HubSpot or Salesforce so they use it.</p><a class="more" href="#hubspot" data-track="hubspot_click" data-loc="service">See HubSpot &amp; CRM</a></li>
+        </ul>
+      </article>
+      <article class="pillar-band p-systems">
+        <header class="pb-head">
+          <p class="pb-num">Pillar 3</p>
+          <h3>Systems engineering and AI agents</h3>
+          <p>Connect your tech, take out the manual work and put agents to work across the company.</p>
+        </header>
+        <ul class="tiles">
+          <li class="tile" id="svc-integrations"><h4>Integrations, automation and applications</h4><p class="t-prob"><b>Problem</b>People re-key data between tools that were never meant to talk.</p><p class="t-sol"><b>Solution</b>We connect them, automate the manual steps or build the application layer on top.</p><a class="more" href="#book" data-track="cta_book_click" data-loc="service">Talk to us about it</a></li>
+          <li class="tile" id="svc-ux"><h4>User experience and front-end design</h4><p class="t-prob"><b>Problem</b>New tools fail when they don't fit how people work.</p><p class="t-sol"><b>Solution</b>Our designer shapes the screens and steps your team will use.</p><a class="more" href="#book" data-track="cta_book_click" data-loc="service">Talk to us about it</a></li>
+          <li class="tile" id="svc-ce"><h4>The Context Engine</h4><p class="t-prob"><b>Problem</b>AI is used one account at a time, and no one sees the whole business.</p><p class="t-sol"><b>Solution</b>One intelligence layer across your systems, with agents that act on what it finds.</p><a class="more" href="#context-engine" data-track="engine_click" data-loc="service">See the Context Engine</a></li>
+        </ul>
+      </article>
+    </div>
+    <p class="inline-cta">Not sure which fits? <a href="#book" data-track="cta_book_click" data-loc="services">Start with a 45-minute conversation.</a></p>
+  </div>
+</section>
+
+<!-- 3b · HOW WE WORK -->
+<section id="how-we-work">
+  <div class="wrap">
+    <p class="eyebrow">How we work</p>
+    <h2>Everything we do starts with how your business runs.</h2>
+    <p class="lede">A core methodology drives every engagement, whether it's a CRM rescue, an outbound program or a custom build.</p>
+    <div class="pyr" aria-label="The Context CoLab">
+      <p class="pyr-name">The Context CoLab</p>
+      <ol class="pyramid funnel">
+        <li class="tier t1"><div class="shape" aria-hidden="true"><span>Context</span></div><div class="desc"><p class="pname">Contextualization</p><h3>We learn how your business runs</h3><p>Your customers, teams, processes, systems and market, before we recommend anything. Every engagement starts here.</p></div></li>
+        <li class="tier t2"><div class="shape" aria-hidden="true"><span>Co</span></div><div class="desc"><p class="pname">Collaboration</p><h3>An embedded extension of your team</h3><p>On every engagement, from the first interviews through launch and training. Your people run the work with us, so they own it, and we stay on for what comes next.</p></div></li>
+        <li class="tier t3"><div class="shape" aria-hidden="true"><span>Lab</span></div><div class="desc"><p class="pname">Build · deploy · iterate</p><h3>We build, launch and keep improving</h3><p>We design and build from approved plans, whether go-to-market motion, custom integration, application or AI agent. Then we launch, measure, refine, repeat.</p></div></li>
+      </ol>
+      <p class="pyr-foot">We call it the Context CoLab. Understanding comes first, and everything we build, we build with you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3c · CONTEXT ENGINE -->
+<section class="engine-sec on-navy" id="context-engine">
+  <div class="wrap">
+    <p class="eyebrow">Context Engine</p>
+    <h2>One intelligence layer across every system you run.</h2>
+    <div class="ce-intro">
+      <p>Most companies are adopting AI one tool at a time: a pilot here, a plug-in there, each one added on top of how work already gets done. The results stay shallow and scattered. AI ends up as a feature instead of a foundation.</p>
+      <p>The Context Engine provides you with a single intelligence layer that runs across your whole business, fed by your existing systems and data, built on your definitions and KPIs. A platform you can engage with in real time and put agents to work across every function.</p>
+    </div>
+    <ol class="pillars3" id="ce-pillars" aria-label="The three pillars of the Context Engine">
+      <li><h3>Data &amp; Intelligence</h3><p>Connects every system, from CRM and ERP to phones and email, into one live view. Every number links back to its source.</p>
+        <ul class="ex"><li>Weekly reporting that builds itself</li><li>Margin by job or client</li><li>Attribution and CAC</li><li>Call intelligence</li></ul></li>
+      <li><h3>Inference on Your Data</h3><p>Finds patterns and predicts what's coming, using your own definitions. What your people know stays after they leave.</p>
+        <ul class="ex"><li>Churn prediction</li><li>Capacity and demand forecasting</li><li>Signed-but-inactive alerts</li><li>Lead triage</li></ul></li>
+      <li><h3>Agents that Act</h3><p>Drafts the next step and stages it in your own tools, on its own or with your approval, across sales, marketing, ops, finance, HR and support.</p>
+        <ul class="ex"><li>Follow-ups staged for approval</li><li>Field calls and texts into the CRM</li></ul>
+        <p class="dev">Industry agents in development: invoice audit, revenue recapture, collections, medical records.</p></li>
+    </ol>
+
+    <div class="ba" id="ce-before-after" aria-label="Before and after the Context Engine">
+      <div class="ba-card ba-today">
+        <p class="ba-lbl">Today</p>
+        <h3>Six systems that don't talk. One person stitching them together.</h3>
+        <ul class="ba-sys">
+          <li>CRM</li><li>Field calls and texts</li><li>ERP and accounting</li><li>Phone system</li><li>Spreadsheets</li><li>Email inbox</li>
+        </ul>
+        <div class="ba-flow ba-grow" aria-hidden="true"><span class="ba-line"></span></div>
+        <p class="ba-out"><b>Someone rebuilds the report by hand</b>Export, paste, reconcile, email. Nobody trusts the number, and next week it starts over.</p>
+      </div>
+      <div class="ba-card ba-ce">
+        <p class="ba-lbl">With the Context Engine</p>
+        <h3>One layer over the stack you already run. No rip-and-replace.</h3>
+        <div class="ba-outs">
+          <p><b>Live scorecard</b>Click any number to hear the call or open the record behind it.</p>
+          <p><b>Agents that act</b>Draft the follow-up, flag the risk, stage the next step in your tools.</p>
+        </div>
+        <div class="ba-flow"><svg class="ba-arrow up" viewBox="0 0 12 36" aria-hidden="true"><path d="M6 34 V6"/><path d="M1.5 10 L6 2 L10.5 10"/></svg><svg class="ba-arrow up" viewBox="0 0 12 36" aria-hidden="true"><path d="M6 34 V6"/><path d="M1.5 10 L6 2 L10.5 10"/></svg></div>
+        <p class="ba-engine"><b>The Context Engine</b>Reads every system in real time, in your own definitions.</p>
+        <div class="ba-flow"><svg class="ba-arrow up" viewBox="0 0 12 36" aria-hidden="true"><path d="M6 34 V6"/><path d="M1.5 10 L6 2 L10.5 10"/></svg></div>
+        <ul class="ba-chips">
+          <li>CRM</li><li>Field calls</li><li>ERP</li><li>Phones</li><li>Spreadsheets</li><li>Inbox</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ce-demo-wrap" id="ce-demo">
+      <div>
+        <h3>Illustrative example</h3>
+        <p>Pick a question. The engine answers it, shows the records behind the answer and stages the next step for approval.</p>
+        <div class="demo-qs" role="group" aria-label="Example questions">
+          <button type="button" data-q="0" aria-pressed="true">Which jobs lost money last quarter, and why?</button>
+          <button type="button" data-q="1" aria-pressed="false">Which clients signed but still haven't started?</button>
+          <button type="button" data-q="2" aria-pressed="false">Which customers cost us the most to serve?</button>
+        </div>
+      </div>
+      <div>
+        <div class="screen" aria-live="polite">
+          <p class="s-row s-ask"><b>You ask</b><span id="dq">Which jobs lost money last quarter, and why?</span></p>
+          <p class="s-row"><b>It answers<small>Inference</small></b><span id="da"></span></p>
+          <p class="s-row"><b>Source<small>Data</small></b><span id="ds"></span></p>
+          <div class="s-row s-act"><b>Next step<small>Agent</small></b><span id="dn"></span><span class="s-btns"><a class="s-btn go" href="#book" data-track="cta_book_click" data-loc="engine_demo_approve">Approve</a><a class="s-btn" href="#book" data-track="cta_book_click" data-loc="engine_demo_edit">Edit</a></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ce-bottom" id="ce-facts">
+      <div>
+        <h3>More than a chat assistant</h3>
+        <ul>
+          <li>Serves every team, not one account at a time</li>
+          <li>Connected live to your systems, not to what someone pastes in</li>
+          <li>Keeps context when people leave</li>
+        </ul>
+      </div>
+      <div>
+        <h3>For your IT lead</h3>
+        <p>Headless, with no new screen to learn. API access you grant and can revoke. About 15 models. Runs in your cloud, on-premises or fully in a closed loop. Where data does leave your environment, sensitive fields are hashed first.</p>
+      </div>
+      <div>
+        <h3>What it costs</h3>
+        <p class="big">From $30,000 / month</p>
+        <p class="roi">Expected to return 10x your investment within two years.</p>
+      </div>
+    </div>
+    <p class="inline-cta">Want to see it on a question from your business? <a href="#book" data-track="cta_book_click" data-loc="engine">Bring it to a 45-minute conversation.</a></p>
+  </div>
+</section>
+
+<!-- 3a · HUBSPOT & CRM -->
+<section class="wash" id="hubspot">
+  <div class="wrap">
+    <p class="eyebrow">HubSpot &amp; CRM</p>
+    <h2>A CRM structured so your team actually works in it</h2>
+    <div class="hs-grid">
+      <div>
+        <p class="lede">Most CRMs fail because the process around them was never designed. We start with how your revenue team works, then build (or refine) the CRM, the reporting and the AI agents around it. We're a certified HubSpot Partner.</p>
+        <ul class="hs-do" aria-label="What we do">
+          <li>HubSpot implementation, audit and rescue</li>
+          <li>Salesforce audit and cleanup</li>
+          <li>Pipeline, handoffs and reporting your leadership reads every week</li>
+          <li>HubSpot AI agents set up, trained on clean data and monitored</li>
+        </ul>
+        <p class="inline-cta"><a href="#pricing" data-track="hubspot_pricing_click">See CRM Rescue and Revenue Engine pricing</a></p>
+      </div>
+      <div>
+        <p class="agents-h" id="hs-agents">HubSpot AI agents we deploy</p>
+        <ul class="agents" aria-label="HubSpot AI agents">
+          <li><b>Prospecting Agent</b><span>Watches buying signals and starts personalized outreach.</span></li>
+          <li><b>Customer Agent</b><span>Answers customer questions across chat, email and other channels.</span></li>
+          <li><b>Data Agent</b><span>Pulls answers from your CRM records, calls and documents.</span></li>
+          <li><b>Content Agent</b><span>Drafts blog posts, social posts and landing pages in your brand voice.</span></li>
+          <li><b>Campaign Agent</b><span>Plans a multi-channel campaign from a single goal.</span></li>
+          <li><b>Nurture Agent</b><span>Sends leads emails matched to where they are in the buying journey.</span></li>
+          <li><b>Smart Deal Progression</b><span>Suggests next steps after every sales call to keep deals moving.</span></li>
+          <li><b>Revenue Agent</b><span>Follows up on invoices automatically to speed up payment.</span></li>
+        </ul>
+        <p class="small" style="margin-top:12px">Agent names are HubSpot's, and the lineup changes as HubSpot releases new agents.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · WHY US -->
+<section id="why">
+  <div class="wrap diff">
+    <div>
+      <p class="eyebrow">Why RubeTech</p>
+      <h2>One senior team, from diagnosis to delivery.</h2>
+      <p class="lede why-lede">Consulting, process design, user experience, engineering and revenue operations sit on one small team that stays with you. Our AI tooling handles the volume a larger firm would staff with junior analysts, so the people on your work are senior and the savings are built into what you pay.</p>
+      <ul class="principles" aria-label="How we work with clients">
+        <li><b>An extension of your team</b><span>We work inside your walls, with your people. Many leadership teams want this capability in-house but don't have the engineers or know where to start. We fill that gap, including as fractional technology leadership.</span></li>
+        <li><b>A trusted advisor, invested in the outcome</b><span>We tell you what we'd do in your seat, including what not to buy and what to turn off. Your results are how we measure our work.</span></li>
+        <li><b>Outcomes first</b><span>We start with the number you're measured on, whether it be revenue growth, retention, churn or NPS, and build the plan to meet it.</span></li>
+        <li><b>Tool-agnostic</b><span>HubSpot or Salesforce, one ERP or another: what matters is that it gets the job done. We work with what you run.</span></li>
+      </ul>
+    </div>
+    <div id="team">
+      <p class="eyebrow">Who you'd work with</p>
+      <ul class="roles" aria-label="Team">
+        <li><strong>Dan Rubenstein<small>Managing Partner</small></strong><span>27 years as a C-suite executive and founder, from a bootstrapped startup to a founding platform company taken to private equity, with multiple exits.</span></li>
+        <li><strong>Lisa Finch<small>Chief Growth &amp; Technology Officer</small></strong><span>Brand, go-to-market and digital systems for founder-led companies at an inflection point.</span></li>
+        <li><strong>Matt Snow<small>Marketing Technology Officer</small></strong><span>20+ years advising SMBs, challenger brands and Fortune 500 companies, connecting brand, data, marketing systems and AI to drive growth.</span></li>
+        <li><strong>Elizabeth Silberman<small>Director of Revenue Operations</small></strong><span>Has run large multi-site operations across consumer services, retail and membership businesses.</span></li>
+        <li><strong>Jillian Brown<small>Marketing Data Consultant</small></strong><span>10 years in marketing technology, automation and CRM.</span></li>
+        <li><strong>Pavel Prikhodko<small>Senior Full-Stack Engineer</small></strong><span>18 years building integrations, applications and agents.</span></li>
+        <li><strong>Joey Rios<small>Analyst</small></strong><span>Maps how the work gets done before anything is built.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · RESULTS BY INDUSTRY -->
+<section class="wash" id="results">
+  <div class="wrap">
+    <p class="eyebrow">Results by industry</p>
+    <h2>What changed for companies like yours</h2>
+    <p class="lede">Pick your industry to see the problems we hear most and the work closest to yours.</p>
+    <div class="filters" role="group" aria-label="Filter by industry"><button type="button" data-f="all" aria-pressed="true">All</button><button type="button" data-f="construction" aria-pressed="false">Construction</button><button type="button" data-f="health" aria-pressed="false">Healthcare</button><button type="button" data-f="animal" aria-pressed="false">Veterinary and pet services</button><button type="button" data-f="wellness" aria-pressed="false">Health and wellness</button><button type="button" data-f="cpg" aria-pressed="false">Consumer packaged goods</button><button type="button" data-f="finance" aria-pressed="false">Financial services</button><button type="button" data-f="media" aria-pressed="false">Media</button><button type="button" data-f="realestate" aria-pressed="false">Real estate development</button></div>
+    <div class="results" id="resultsGrid">
+      <article class="note hear" data-hear="construction" hidden>
+        <div class="where"><b>What we hear in construction</b></div>
+        <ul><li>Sub bids arrive in a dozen formats and get re-keyed by hand</li><li>Change orders that never get billed</li><li>Field calls and texts that never reach the CRM</li></ul>
+        
+      </article>
+      <article class="note hear" data-hear="health" hidden>
+        <div class="where"><b>What we hear in healthcare</b></div>
+        <ul><li>Intake emails and attachments re-keyed into the medical record</li><li>Referrals that wait days before anyone schedules them</li><li>Staffing and scheduling spread across spreadsheets</li></ul>
+        
+      </article>
+      <article class="note hear" data-hear="animal" hidden>
+        <div class="where"><b>What we hear in veterinary and pet services</b></div>
+        <ul><li>Dozens of tools across departments and no full list</li><li>Each location left to find its own customers</li><li>No clear view of revenue and margin by location</li></ul>
+        
+      </article>
+      <article class="note hear" data-hear="wellness" hidden>
+        <div class="where"><b>What we hear in health and wellness</b></div>
+        <ul><li>Leads that go cold between inquiry and first appointment</li><li>Package and membership revenue tracked by hand</li><li>Locations reporting numbers that don&#x27;t mean the same thing</li></ul>
+        
+      </article>
+      <article class="note hear" data-hear="cpg" hidden>
+        <div class="where"><b>What we hear in consumer packaged goods</b></div>
+        <ul><li>Sales data split across distributors, retailers and your own channels</li><li>Trade spend with no clear return</li><li>Forecasts rebuilt in spreadsheets every month</li></ul>
+        
+      </article>
+      <article class="note hear" data-hear="finance" hidden>
+        <div class="where"><b>What we hear in financial services</b></div>
+        <ul><li>Client data split between the CRM, planning and custodial systems</li><li>Compliance and client reporting assembled by hand</li><li>A referral pipeline that depends on a few advisors</li></ul>
+        
+      </article>
+      <article class="note hear" data-hear="media" hidden>
+        <div class="where"><b>What we hear in media</b></div>
+        <ul><li>Ad sales pipeline tracked outside the CRM</li><li>Campaign results reported by hand for every client</li><li>Prospecting that depends on a few sellers</li></ul>
+        
+      </article>
+      <article class="note hear" data-hear="realestate" hidden>
+        <div class="where"><b>What we hear in real estate development</b></div>
+        <ul><li>Project costs, leasing and investor data in separate systems</li><li>Investor updates assembled by hand every quarter</li><li>No single view of the deal pipeline</li></ul>
+        
+      </article>
+      <article class="note" data-ind="animal">
+        <div class="where"><b>Specialty veterinary hospital</b></div>
+        <p class="metric">53 tools, 16 departments, 46 interviews</p>
+        <div class="rows">
+          <div><b>Challenge</b><span>Nobody had a full list of the software in use across the hospital.</span></div>
+          <div><b>What we built</b><span>Mapped every tool through 46 interviews and ranked 35 places technology could help, before recommending a purchase.</span></div>
+          
+          
+        </div>
+      </article>
+      <article class="note" data-ind="health">
+        <div class="where"><b>Healthcare operator</b></div>
+        <p class="metric">About 150 intake emails a day, filed automatically</p>
+        <div class="rows">
+          <div><b>Challenge</b><span>Staff opened, read and re-keyed every intake email and attachment into the medical record.</span></div>
+          <div><b>What we built</b><span>Each email is filed into the record as it arrives, and people review only the exceptions.</span></div>
+          
+          
+        </div>
+      </article>
+      <article class="note" data-ind="construction">
+        <div class="where"><b>Commercial contractor</b></div>
+        <p class="metric">Every sub bid leveled before an estimator opens it</p>
+        <div class="rows">
+          <div><b>Challenge</b><span>Bids arrived in a dozen formats and were re-keyed by hand, which capped how many jobs the firm could bid.</span></div>
+          <div><b>What we built</b><span>Every sub bid is read, leveled and flagged automatically.</span></div>
+          
+          
+        </div>
+      </article>
+      <article class="note" data-ind="health">
+        <div class="where"><b>Home-care operator</b></div>
+        <p class="metric">About an hour a day back</p>
+        <div class="rows">
+          <div><b>Challenge</b><span>Several old contract templates, and billing re-entered by hand after every signing.</span></div>
+          <div><b>What we built</b><span>One template that fills itself in, with payment links and reminders. The billing record is created when the client signs.</span></div>
+          <div><b>Outcome</b><span>About an hour a day of document work and billing re-entry removed</span></div>
+          
+        </div>
+      </article>
+      <article class="note" data-ind="animal">
+        <div class="where"><b>Multi-location pet services</b></div>
+        <p class="metric">An AI-assisted outbound system, feeding the CRM</p>
+        <div class="rows">
+          <div><b>Challenge</b><span>Growth depended on each location finding its own customers.</span></div>
+          <div><b>What we built</b><span>An outbound system that sources, writes and sends, and hands replies to the team in the CRM.</span></div>
+          
+          
+        </div>
+      </article>
+      <article class="note" data-ind="any">
+        <div class="where"><b>Don't see your business?</b></div>
+        <p class="metric">Ask for the closest example on a call.</p>
+        <p class="did">We'll walk you through work from the industry nearest yours, including what it cost and what changed.</p>
+        <p class="result-row"><a href="#book" data-track="cta_book_click" data-loc="results">Book a 45-minute conversation</a></p>
+      </article>
+    </div>
+    <figure class="quote">
+      <blockquote>"RubeTech brought clarity where noise and hype are common, identifying not only where technology gaps were holding us back, but execution gaps as well. As someone who started this business swinging a hammer, I appreciate people who roll up their sleeves and get the work done."</blockquote>
+      <figcaption>Founder, commercial general contractor · </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 5 · HOW IT STARTS -->
+<section id="how-it-starts">
+  <div class="wrap">
+    <p class="eyebrow">How it starts</p>
+    <h2>What happens after the first call</h2>
+    <p class="lede">You decide one step at a time. Each step has a written scope and price before it starts.</p>
+    <ol class="journey">
+      <li>
+        <div><h3>A 45-minute conversation</h3><p>You bring the problem or decision in front of you. We ask how your company runs around it, and you leave with our view.</p></div>
+        <div class="meta"><div><b>Cost</b>None</div><div><b>Who from your side</b>You, and anyone you want in the room</div></div>
+      </li>
+      <li>
+        <div><h3>Discovery Assessment</h3><p>We interview people across the company, from leadership to the front desk, and map how work moves across people, process and technology. We also write down what your terms mean, so "an active client" means the same thing in every system and report.</p></div>
+        <div class="meta"><div><b>Length</b><span>About 6 weeks </span></div><div><b>Who from your side</b><span>Most people once, for about 45 minutes </span></div></div>
+      </li>
+      <li>
+        <div><h3>Findings and recommendations</h3><p>A written report you can use whether or not you keep working with us.</p>
+          <ul class="deliv">
+            <li>Every system you run and what it holds</li>
+            <li>Where data and handoffs break, and what that costs</li>
+            <li>Opportunities ranked by value</li>
+            <li>What we'd turn off</li>
+            <li>The first piece of work we'd take on</li>
+          </ul>
+        </div>
+        <div class="meta"><div><b>Who from your side</b>Leadership team, for a readout meeting</div></div>
+      </li>
+      <li>
+        <div><h3>Your next engagement</h3><p>If you want to keep going, you get a written scope, timeline and price for the next piece of work, such as a 100-Day Plan, a CRM Rescue, a Revenue Engine Build or a Context Engine deployment. It's priced on its own, and nothing starts until you approve it.</p></div>
+        <div class="meta"><div><b>Who from your side</b>Owner or CEO signs off. COO and IT lead review the plan.</div></div>
+      </li>
+      <li>
+        <div><h3>Delivery and monthly reporting</h3><p>We do the work with your team and train the people who'll use what we build. Every month you get a written report on progress against the plan, including anything that slipped and why.</p></div>
+        <div class="meta"><div><b>Who from your side</b>The leaders and teams closest to the work</div></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 6 · PRICING -->
+<section class="wash" id="pricing">
+  <div class="wrap">
+    <p class="eyebrow">Pricing</p>
+    <h2>What working with us costs</h2>
+    <p class="lede">Starting points for our most common engagements, so you can tell quickly whether we're a fit.</p>
+    <div class="prices">
+      <article class="price first" id="discovery-assessment">
+        <h3>Discovery Assessment <span class="start">Start here</span></h3>
+        <p class="amt">From $25,000</p>
+        <p class="term">About 6 weeks</p>
+        <p>How your business runs across people, process and technology, with written findings and ranked recommendations, including what to turn off.</p>
+        <a class="start-btn" href="#book" data-track="cta_book_click" data-loc="assessment">Book a 45-minute call to scope it</a>
+      </article>
+      <article class="price">
+        <h3>The 100-Day Plan</h3>
+        <p class="amt">From $40,000</p>
+        <p class="term">About 2 months</p>
+        <p>The Discovery Assessment and a sequenced 100-day plan, run in parallel. You get what to fix, connect, build and turn off, in order, with an owner for each step.</p>
+      </article>
+      <article class="price">
+        <h3>CRM Rescue</h3>
+        <p class="amt">From $20,000</p>
+        <p class="term">4–8 weeks</p>
+        <p>What's broken in your CRM, what your team works around, and the fix, done.</p>
+      </article>
+      <article class="price">
+        <h3>Revenue Engine Build</h3>
+        <p class="amt">From $30,000</p>
+        <p class="term">6-month build</p>
+        <p>ICP and positioning through live outbound with managed capacity.</p>
+        <p class="addon"><b>Add-on: RevOps engine</b>From $5,000 / month for ongoing management of your pipeline, handoffs and reporting.</p>
+      </article>
+      <article class="price ce-card">
+        <h3>The Context Engine</h3>
+        <p class="amt">From $30,000 / month</p>
+        <p class="term">All-in, including a 3–6 month deployment</p>
+        <p>Deployment, the running engine, the models and our team in one monthly price. About what one in-house engineer costs.</p>
+        <p class="roi">Expected to return 10x your investment within two years.</p>
+        <a class="start-btn" href="#book" data-track="cta_book_click" data-loc="engine_price">Book a 45-minute call about it</a>
+      </article>
+    </div>
+    <p class="qualifiers">The Discovery Assessment is priced on its own. Any engagement after it is scoped and priced separately. Starting prices move with company size, the number of locations and systems, and scope, and larger or multi-company programs are scoped individually. <a href="#book" data-track="cta_book_click" data-loc="pricing">Ask on a 45-minute call what yours would look like.</a></p>
+  </div>
+</section>
+
+<!-- 9 · SELF-CHECK -->
+<section id="self-check">
+  <div class="wrap check">
+    <div class="check-intro">
+      <p class="eyebrow">Not ready to talk yet?</p>
+      <h2>The 3-minute business self-check</h2>
+      <p class="lede">Eight questions across people, process and technology. Answer as the owner, CEO or COO. You'll see where your business is carrying the most weight, and what that usually means at your size.</p>
+      <p class="small">"Not sure" counts as a flag, because not knowing is usually the finding. Nothing is sent unless you ask for it.</p>
+    </div>
+    <div>
+      <form id="checkForm" novalidate>
+        <div class="qs" id="qs">
+          <div class="revq">
+            <label for="scRev">First, roughly how much annual revenue does your company have?</label>
+            <select id="scRev" name="revenue">
+              <option value="">Choose one</option>
+              <option value="u25">Under $25M</option>
+              <option value="25-75">$25M–$75M</option>
+              <option value="75-150">$75M–$150M</option>
+              <option value="150-300">$150M–$300M</option>
+              <option value="o300">Over $300M</option>
+            </select>
+          </div>
+        </div>
+        <p class="progress" id="progress" aria-live="polite">0 of 8 answered</p>
+        <div class="btns" style="margin-top:14px">
+          <button class="btn btn-go" type="submit" id="seeResults" data-track="selfcheck_complete">See my results</button>
+        </div>
+      </form>
+      <div class="result" id="result" hidden tabindex="-1">
+        <p class="score" id="score"></p>
+        <h3 id="resultHead"></h3>
+        <p id="resultBody"></p>
+        <div class="dims" id="dims" aria-label="Your results by area"></div>
+        <p class="sizeline" id="sizeLine"></p>
+        <ul id="resultList"></ul>
+        <div class="offer">
+          <strong id="offerHead">Talk it through with a senior operator</strong>
+          <p id="offerBody">A 45-minute conversation about your results, with someone who has run a business your size.</p>
+          <a class="btn btn-go" href="#book" data-track="cta_book_click" data-loc="selfcheck">Book a 45-minute conversation</a>
+        </div>
+        <form class="capture" id="captureForm" novalidate>
+          <p style="margin:0;font-weight:600">Or email me my results and what we'd look at first</p>
+          <div class="row">
+            <label for="capEmail">Work email<input id="capEmail" name="email" type="email" autocomplete="email" required></label>
+            <label for="capRole">Your role
+              <select id="capRole" name="role">
+                <option value="">Choose one</option>
+                <option>Owner or CEO</option>
+                <option>COO or operations</option>
+                <option>CFO or finance</option>
+                <option>IT or technology</option>
+                <option>PE or investment firm</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+          <div><button class="btn btn-go" type="submit" data-track="selfcheck_email_submit">Send my results</button></div>
+          <p class="sent" id="sent" hidden></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · FAQ -->
+<section class="wash" id="faq">
+  <div class="wrap">
+    <p class="eyebrow">Before you book</p>
+    <h2>What leadership teams ask us first</h2>
+    <div class="faq">
+      <details><summary data-track="faq_open">What does RubeTech cost?</summary>
+        <div class="a"><p>Most work starts with a Discovery Assessment, from $25,000 over about six weeks. It&#x27;s priced on its own, and any engagement after it is scoped and priced separately. The pricing section shows starting points for the 100-Day Plan, CRM Rescue, the Revenue Engine Build and the Context Engine, which starts at $30,000 a month. Final pricing moves with company size, the number of locations and systems, and scope.</p></div></details>
+      <details><summary data-track="faq_open">How do we use AI to make our people more efficient without cutting jobs?</summary>
+        <div class="a"><p>Start with the manual work that fills their week: re-keying, reporting and chasing follow-ups. We automate it and put agents on it, so your sales, marketing and operations teams spend their time on higher-value work. Most clients use the gain to grow without adding headcount.</p></div></details>
+      <details><summary data-track="faq_open">What happens on the first call?</summary>
+        <div class="a"><p>Forty-five minutes with a senior operator. You bring the problem or decision in front of you, and we ask how your company runs around it. You leave with our view. If working together makes sense, we&#x27;ll outline a Discovery Assessment, including its length, its cost and who on your team it involves. If it doesn&#x27;t, we&#x27;ll say so.</p></div></details>
+      <details><summary data-track="faq_open">How is the Context Engine different from giving our team ChatGPT or Claude?</summary>
+        <div class="a"><p>A chat assistant knows what one person pastes into it. The Context Engine is connected to all of your systems, uses your own definitions and KPIs, keeps what your people know after they leave, and stages the next step in your own tools. It runs on about 15 models, so it isn&#x27;t tied to any one of them.</p></div></details>
+      <details><summary data-track="faq_open">We already have an IT lead. Where do you fit?</summary>
+        <div class="a"><p>Next to them. Your IT lead keeps your systems running and stays in charge of them. We add the capacity they rarely have time for: mapping how work moves between systems, planning what to connect or retire, and engineering the builds.</p></div></details>
+      <details><summary data-track="faq_open">I&#x27;m the COO. How do I bring this to my CEO?</summary>
+        <div class="a"><p>Send them this page, or book the conversation together so you both hear the same answers. Most of the questions we start with are ones the CEO will ask anyway: what the problem costs the business today, what changes first, and how much of the team&#x27;s time it takes.</p></div></details>
+      <details><summary data-track="faq_open">How long does the Discovery Assessment take, and how much of our team&#x27;s time?</summary>
+        <div class="a"><p>Usually about six weeks. Most people spend about 45 minutes with us once, and the people closest to the problem spend more. We schedule around your busy periods. </p></div></details>
+      <details><summary data-track="faq_open">Do we have to replace our systems?</summary>
+        <div class="a"><p>No. Most of our work starts with what you already run. When something does need to go, you&#x27;ll know why before anything changes.</p></div></details>
+      <details><summary data-track="faq_open">What size company do you work with?</summary>
+        <div class="a"><p>Larger SMB and mid-market companies, owner-led or PE-backed, with roughly $25M to $300M in revenue and often several locations. Below that range the economics rarely work for either of us, and we&#x27;ll tell you.</p></div></details>
+      <details><summary data-track="faq_open">Do you work with private equity–backed companies?</summary>
+        <div class="a"><p>Yes. We work with PE-backed operating companies, and with sponsors who want the same approach across several portfolio companies running on different systems.</p></div></details>
+      <details><summary data-track="faq_open">Do we own what you build, and where does our data live?</summary>
+        <div class="a"><p>Your data stays yours, and custom builds are yours. The Context Engine is licensed. It runs in your cloud, on your own servers or fully in a closed loop, and where data does leave your environment, sensitive fields are hashed first.</p></div></details>
+      <details><summary data-track="faq_open">Are you a HubSpot agency?</summary>
+        <div class="a"><p>No. We&#x27;re a consultancy with a revenue operations practice and a certified HubSpot Partner. For a revenue operation, we implement HubSpot or Salesforce and deploy HubSpot&#x27;s AI agents. For intelligence and agents across every department, that&#x27;s the Context Engine. We&#x27;ll tell you when the problem is bigger than the CRM.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · BOOK -->
+<section class="book on-navy" id="book">
+  <div class="wrap book-grid">
+    <div>
+      <p class="eyebrow" style="color:#9FE7BE">Book a conversation</p>
+      <h2>Bring the problem that's in front of you.</h2>
+      <p class="lede">Forty-five minutes with a senior operator. You leave with our view whether or not you hire us.</p>
+      <ol class="expect" aria-label="What happens when you book">
+        <li>Pick a time. Invite your COO or IT lead if you like.</li>
+        <li>Tell us in one line what's on your desk.</li>
+        <li>Talk it through with someone who has run a business like yours.</li>
+        <li>Leave with our view. If it makes sense, we'll outline a Discovery Assessment with its length and cost.</li>
+      </ol>
+      <p class="topic" id="bookTopic" hidden></p>
+      <p class="alt-path">Not ready? <a href="#self-check" data-track="selfcheck_click" data-loc="book">Take the self-check first.</a></p>
+    </div>
+    <div class="cal" role="region" aria-label="Calendar booking placeholder">
+      <strong></strong>
+      <span>45-minute conversation. Booking questions: name, work email, company, role, annual revenue range, and "What's on your desk?" (one line, optional; prefilled from the self-check).</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p style="margin:0 0 6px;font-weight:800;color:var(--ink);font-size:17px">RubeTech Partners</p>
+        <p class="small" style="margin:0 0 12px">The Context CoLab. An operator-led consultancy in Westport, Connecticut, working nationally. Certified HubSpot Partner.</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#svc-discovery">Discovery Assessment</a></li>
+          <li><a href="#svc-revops">RevOps and go-to-market</a></li>
+          <li><a href="#svc-outbound">Outbound as a service</a></li>
+          <li><a href="#hubspot">HubSpot and CRM</a></li>
+          <li><a href="#svc-integrations">Integrations, automation and applications</a></li>
+          <li><a href="#context-engine">The Context Engine</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#why">The team</a></li>
+          <li><a href="#results">Client results</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#book">Book a call</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 RubeTech Partners LLC</span>
+      <span><a href="https://www.linkedin.com/company/rubetech-partners">LinkedIn</a></span>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('siteNav');
+  function setOpen(o){nav.classList.toggle('open',o);btn.setAttribute('aria-expanded',String(o));btn.textContent=o?'Close':'Menu';}
+  btn.addEventListener('click',function(){setOpen(!nav.classList.contains('open'));});
+  nav.addEventListener('click',function(e){if(e.target.closest('a'))setOpen(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')setOpen(false);});
+
+  var items=document.querySelectorAll('.nav-item');
+  function closeAll(except){items.forEach(function(it){if(it!==except){it.classList.remove('open');var b=it.querySelector('.dd-btn');if(b)b.setAttribute('aria-expanded','false');}});}
+  items.forEach(function(it){
+    var b=it.querySelector('.dd-btn');
+    b.addEventListener('click',function(e){e.stopPropagation();var o=!it.classList.contains('open');closeAll(it);it.classList.toggle('open',o);b.setAttribute('aria-expanded',String(o));if(o)track('nav_dd_open',{menu:it.querySelector('.nav-top').textContent});});
+    it.querySelectorAll('.dd a').forEach(function(a){a.addEventListener('click',function(){closeAll();if(document.activeElement)document.activeElement.blur();});});
+  });
+  document.addEventListener('click',function(e){if(!e.target.closest('.nav-item'))closeAll();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){var o=document.querySelector('.nav-item.open .dd-btn');closeAll();if(o)o.focus();}});
+
+  var Q=[
+    {dim:"Process",t:"When work passes between teams (sales to operations, operations to billing), does everyone know who owns each handoff?",flag:"no",topic:"ownership of handoffs between teams",why:"Handoffs without a clear owner are where jobs stall and details get re-keyed.",size:"Companies your size have usually outgrown handoffs that worked by everyone knowing each other."},
+    {dim:"Technology",t:"Could you get one answer to which customers or jobs made money last quarter within a day?",flag:"no",topic:"job and customer profitability",why:"The answer exists, but someone has to assemble it by hand, so it gets asked less often than it should.",size:"At your size, a few points of margin on the wrong jobs is real money."},
+    {dim:"People",t:"Is there a number the business depends on that only one person knows how to produce?",flag:"yes",topic:"a number only one person can produce",why:"When that person is out, the number is out too.",size:"This risk grows with every location and system you add."},
+    {dim:"Technology",t:"Do people type the same information into more than one system?",flag:"yes",topic:"re-keying between systems",why:"Re-keying is one of the most common hidden costs we find, and usually one of the easiest to remove.",size:"Across several teams, a few minutes per record adds up to headcount."},
+    {dim:"Technology",t:"Has a system you bought in the last three years ended up mostly unused?",flag:"yes",topic:"a system that went unused",why:"Systems usually go unused because the work around them never changed. Buying another one won't fix that.",size:"Companies your size often pay for more software than they use."},
+    {dim:"People",t:"Does someone on your team own the technology roadmap as their main job?",flag:"no",topic:"who owns the technology roadmap",why:"The roadmap gets whatever time the leadership team has left over.",size:"This is common below the size where a full technology leadership team makes sense."},
+    {dim:"Process",t:"Is new business predictable month to month, without depending on one or two people's networks?",flag:"no",topic:"a predictable pipeline",why:"When pipeline depends on a few people, growth slows whenever they're busy.",size:"Most companies your size grew on referrals. Staying on that path usually caps growth."},
+    {dim:"People",t:"Does each person use AI their own way, with no shared approach across the company?",flag:"yes",topic:"how AI is rolled out across the company",why:"AI used one person at a time rarely reaches the rest of the business.",size:"Companies your size usually have the data to do this company-wide, but it sits in separate tools."}
+  ];
+  var PRIORITY=[1,0,6,3,2,7,4,5];
+  var qs=document.getElementById('qs'),prog=document.getElementById('progress');
+  Q.forEach(function(q,i){
+    var fs=document.createElement('fieldset');fs.className='q';
+    var lg=document.createElement('legend');lg.innerHTML='<span>'+(i+1)+'</span>'+q.t+'<span class="dim">'+q.dim+'</span>';fs.appendChild(lg);
+    var o=document.createElement('div');o.className='opts';
+    [['yes','Yes'],['no','No'],['unsure','Not sure']].forEach(function(p){
+      var id='q'+i+'_'+p[0];
+      var l=document.createElement('label');l.setAttribute('for',id);
+      l.innerHTML='<input type="radio" id="'+id+'" name="q'+i+'" value="'+p[0]+'"> '+p[1];
+      o.appendChild(l);
+    });
+    fs.appendChild(o);qs.appendChild(fs);
+  });
+  var started=false;
+  function val(i){var el=document.querySelector('input[name="q'+i+'"]:checked');return el?el.value:null;}
+  function answered(){var n=0;Q.forEach(function(q,i){if(val(i))n++;});return n;}
+  qs.addEventListener('change',function(){
+    if(!started){started=true;track('selfcheck_start');}
+    prog.textContent=answered()+' of 8 answered';
+  });
+  var REV={"u25":"Under $25M","25-75":"$25M–$75M","75-150":"$75M–$150M","150-300":"$150M–$300M","o300":"Over $300M"};
+  document.getElementById('checkForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=answered();
+    if(n<Q.length){prog.textContent='Answer all 8 to see your results ('+n+' of 8 so far).';return;}
+    var rev=document.getElementById('scRev').value;
+    var flagged=[];
+    Q.forEach(function(q,i){var v=val(i);if(v===q.flag||v==='unsure')flagged.push(i);});
+    var s=flagged.length,head,body;
+    if(s<=2){head="Most of the weight already has an owner.";body="A 45-minute conversation is still a useful way to pressure-test the next big decision.";}
+    else if(s<=5){head="Your leadership team is carrying several of these.";body="That's the situation we work in most often. Here's what your answers point to:";}
+    else{head="Most of the weight sits with your leadership team.";body="A conversation about the hardest one is the quickest place to start. Here's what your answers point to:";}
+    document.getElementById('score').innerHTML=s+' <small>of 8 flagged</small>';
+    var D={People:[0,0],Process:[0,0],Technology:[0,0]};
+    Q.forEach(function(q,i){D[q.dim][1]++;if(flagged.indexOf(i)>-1)D[q.dim][0]++;});
+    var dh='';['People','Process','Technology'].forEach(function(k){var f=D[k][0],t=D[k][1],band=f===0?'In good shape':(f===t?'Carrying the most weight':'Some strain');
+      dh+='<div class="dim-row"><b>'+k+'</b><span class="bar"><i style="width:'+Math.round(f/t*100)+'%"></i></span><span class="band">'+band+' · '+f+' of '+t+'</span></div>';});
+    document.getElementById('dims').innerHTML=dh;
+    document.getElementById('resultHead').textContent=head;
+    document.getElementById('resultBody').textContent=body;
+    var sl=document.getElementById('sizeLine');
+    if(rev==='u25'){sl.textContent="At under $25M, many of these are easier to fix in-house, and we'll point you to resources that fit.";}
+    else if(rev==='o300'){sl.textContent="At over $300M, these usually sit across several business units. We'd start with the one closest to revenue.";}
+    else if(rev){sl.textContent="At "+REV[rev]+", these are the problems we see most. The business has outgrown the systems it started with, and the leadership team hasn't yet added the people to own them.";}
+    else{sl.textContent="";}
+    var ul=document.getElementById('resultList');ul.innerHTML='';
+    flagged.forEach(function(i){var li=document.createElement('li');li.textContent=Q[i].why;var sp=document.createElement('span');sp.className='size';sp.textContent=Q[i].size;li.appendChild(sp);ul.appendChild(li);});
+    var top=null;PRIORITY.some(function(i){if(flagged.indexOf(i)>-1){top=i;return true;}return false;});
+    var bt=document.getElementById('bookTopic');
+    if(top!==null){
+      document.getElementById('offerBody').textContent='A 45-minute conversation with someone who has run a business your size. We\'d start with '+Q[top].topic+'.';
+      bt.textContent='From your self-check, we\'d start with '+Q[top].topic+'. This is added to your booking note.';bt.hidden=false;
+    }else{bt.hidden=true;}
+    var r=document.getElementById('result');r.hidden=false;r.focus({preventScroll:true});r.scrollIntoView({behavior:'smooth',block:'start'});
+    track('selfcheck_complete',{band:s<=2?'low':s<=5?'mid':'high',revenue:rev,top:top!==null?Q[top].topic:''});
+  });
+  document.getElementById('captureForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var em=document.getElementById('capEmail');
+    if(!em.value||!em.checkValidity()){em.focus();em.setAttribute('aria-invalid','true');return;}
+    em.removeAttribute('aria-invalid');
+    document.getElementById('sent').hidden=false;
+    track('selfcheck_email_submit',{role:document.getElementById('capRole').value});
+  });
+  var fb=document.querySelectorAll('.filters button');
+  fb.forEach(function(b){b.addEventListener('click',function(){
+    var f=b.dataset.f;fb.forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+    var any=false;
+    document.querySelectorAll('#resultsGrid .note[data-ind]').forEach(function(n){var i=n.dataset.ind;if(i==='any')return;var show=(f==='all'||i===f);n.hidden=!show;if(show&&f!=='all')any=true;});
+    document.querySelectorAll('#resultsGrid .note[data-hear]').forEach(function(n){n.hidden=(n.dataset.hear!==f);});
+    var ask=document.querySelector('#resultsGrid .note[data-ind="any"]');if(ask)ask.hidden=(f!=='all'&&any);
+    track('results_filter',{industry:f});
+  });});
+  var DEMO=[
+    {a:"4 of 38 closed jobs finished below target margin. Most of the gap traces to change orders that were never billed.",s:"Job-cost entries · change orders · invoices",n:"A note to the project managers listing the 4 jobs and the unbilled change orders."},
+    {a:"9 clients who signed in the last 30 days have no first appointment scheduled.",s:"CRM deals · scheduling system",n:"A follow-up task for each account owner, due this week."},
+    {a:"Your 10 most service-heavy accounts use 31% of support hours and bring in 12% of revenue.",s:"Phone system · support tickets · billing",n:"A pricing review for the account team, with each account's cost to serve."}];
+  var dq=document.querySelectorAll('.demo-qs button');
+  function showDemo(i){var d=DEMO[i];document.getElementById('dq').textContent=dq[i].textContent;document.getElementById('da').textContent=d.a;document.getElementById('ds').innerHTML='<a href="#context-engine" onclick="return false" style="color:#0040A0;font-weight:600">'+d.s+' \u203A</a>';document.getElementById('dn').textContent=d.n;dq.forEach(function(b,k){b.setAttribute('aria-pressed',String(k===i));});}
+  dq.forEach(function(b,k){b.addEventListener('click',function(){showDemo(k);track('ce_demo',{q:k});});});
+  if(dq.length)showDemo(0);
+  function track(name,props){try{console.log('[track]',name,props||{});}catch(_){}}
+  document.addEventListener('click',function(e){var a=e.target.closest('[data-track]');if(a&&a.tagName!=='BUTTON')track(a.dataset.track,{loc:a.dataset.loc||''});});
+})();
+</script>
+
+
+</body></html>
